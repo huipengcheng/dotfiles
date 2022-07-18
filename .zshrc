@@ -94,6 +94,15 @@ alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
+# git
+alias ga='ga'
+alias gaa='git add --all'
+alias gcmsg='git commit -m'
+alias gcv='git commit -av'
+alias gst='git status'
+alias gp='git push'
+
+
 # pacman and yay
 alias pacs='sudo pacman -S'
 alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
@@ -158,10 +167,11 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
+    #OMZP::git 
 zinit wait"1" lucid light-mode for\
-    OMZP::git OMZP::extract OMZP::gitignore  OMZP::cp OMZP::safe-paste \
+    OMZP::extract OMZP::gitignore  OMZP::cp OMZP::safe-paste \
     OMZP::colored-man-pages OMZP::copyfile OMZP::copypath OMZP::copybuffer \
-    OMZP::colorize OMZP::history OMZP::gitignore OMZP::command-not-found \
+    OMZP::colorize OMZP::history OMZP::command-not-found \
 
 zinit wait"3" lucid light-mode for\
     dashixiong91/zsh-vscode paulirish/git-open \
@@ -179,10 +189,10 @@ zinit wait lucid light-mode for\
     # atload"export DOTBARE_DIR='$HOME/.dotfiles' ; _dotbare_completion_cmd" \
     #     kazhala/dotbare \
 
-zinit ice as"program" \
-    atload'export PF_INFO="ascii title host os kernel uptime pkgs memory shell editor wm de palette";
-           export PF_ASCII="Linux"; export PF_COL3=5; export PF_COL1=6; export PF_COL2=8;' # pfetch
-zinit snippet 'https://github.com/dylanaraps/pfetch/blob/master/pfetch'
+#zinit ice as"program" \
+#    atload'export PF_INFO="ascii title host os kernel uptime pkgs memory shell editor wm de palette";
+#           export PF_ASCII="Linux"; export PF_COL3=5; export PF_COL1=6; export PF_COL2=8;' # pfetch
+#zinit snippet 'https://github.com/dylanaraps/pfetch/blob/master/pfetch'
 
 # vimode
 zinit ice depth"1" \
