@@ -13,5 +13,4 @@ fi
 (sleep 2 ; gtk-launch GoldenDict++.desktop 2>> "${LOG_FILE}") &
 (firefox 2>> "${LOG_FILE}") &
 (sleep 2 ; uget-gtk 2>> "${LOG_FILE}") &
-(pcmanfm --daemon-mode 2>> "${LOG_FILE}") &
 (copyq 2>> "${LOG_FILE}") &
