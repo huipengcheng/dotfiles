@@ -117,8 +117,17 @@ alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias psmem='ps auxf | sort -nr -k 4'
 alias pscpu='ps auxf | sort -nr -k 3'
 
+# grep color
+alias grep="grep --color='auto'"
+
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+
+# fast navigation
+alias ".."="cd .."
+alias "..."="cd ../.."
+alias "...."="cd ../../.."
+alias "....."="cd ../../../.."
 
 # Play audio files in current dir by type
 alias playwav='deadbeef *.wav'
