@@ -206,7 +206,12 @@ zinit wait lucid light-mode for \
     zsh-users/zsh-autosuggestions \
   atload"bindkey '^P' history-substring-search-up ; bindkey '^N' history-substring-search-down" \
     zsh-users/zsh-history-substring-search \
-  atload"zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup" \
+  atload"zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup;
+         zstyle ':completion:*:git-checkout:*' sort false; 
+         zstyle ':completion:*:descriptions' format '[%d]';
+         zstyle ':fzf-tab:*' show-group breif;
+         zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS};
+         zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath';" \
     Aloxaf/fzf-tab
 
 zinit ice depth"1" \
@@ -229,5 +234,3 @@ zinit light romkatv/powerlevel10k
 # hacker-quotes fzf per-directory-history
 
 colorscript random
-
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
