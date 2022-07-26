@@ -7,6 +7,9 @@ fi
 
 typeset -U PATH # Prevents duplicates of PATH variables.
 
+# https://github.com/zsh-users/zsh/blob/master/Functions/Zle/url-quote-magic
+autoload -Uz url-quote-magic
+
 ##############
 # Navigation #
 ##############
@@ -30,6 +33,19 @@ setopt HIST_FIND_NO_DUPS         # Do not display a previously found event.
 setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history file.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
+
+### Fix slowness of pastes with zsh-syntax-highlighting.zsh
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+### Fix slowness of pastes
 
 ###############
 # Completions #
@@ -95,7 +111,7 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
 # git
-alias ga='ga'
+alias ga='git add'
 alias gaa='git add --all'
 alias gcmsg='git commit -m'
 alias gcv='git commit -av'
