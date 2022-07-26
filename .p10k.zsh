@@ -37,6 +37,8 @@
     command_execution_time  
     java_version
     go_version
+    node_version
+    rust_version
     status
     # =========================[ Line #2 ]=========================
     newline                 # \n
