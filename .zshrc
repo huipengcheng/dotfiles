@@ -171,6 +171,8 @@ alias config="cd ~/dotfiles"
 alias vim='nvim'
 alias obsidian='AppImageLauncher ~/Applications/Obsidian* &'
 
+alias passpush='cd ~/.password-store && git push'
+
 alias reload='exec zsh'
 alias src='exec zsh'
 
