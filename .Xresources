@@ -6,8 +6,8 @@ Xft.autohint: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcdfilter
 
-Xcursor.theme: Breeze
-Xcursor.size: 30
+Xcursor.theme: Qogir
+Xcursor.size: 25
 
 
 
