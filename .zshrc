@@ -173,6 +173,9 @@ alias obsidian='AppImageLauncher ~/Applications/Obsidian* &'
 
 alias passpush='(cd ~/.password-store && git push)'
 
+# Alias for stow
+alias stowrefresh='(cd ~/dotfiles && stow .)'
+
 alias reload='exec zsh'
 alias src='exec zsh'
 
