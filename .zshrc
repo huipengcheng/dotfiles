@@ -171,7 +171,11 @@ alias config="cd ~/dotfiles"
 alias vim='nvim'
 alias obsidian='AppImageLauncher ~/Applications/Obsidian* &'
 
+# pass
 alias passpush='(cd ~/.password-store && git push)'
+
+# rclone
+alias mountzotfile='rclone mount TeraCloud-WebDav:/Reading ~/own/zotfile'
 
 # Alias for stow
 alias stowrefresh='(cd ~/dotfiles && stow .)'
