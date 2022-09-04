@@ -1,0 +1,3302 @@
+{
+	"info": {
+		"relation": {
+			"group": 0,
+			"priority": 1
+		},
+		"http": {
+			"redirection-limit": 30
+		},
+		"proxy": {
+			"host": "127.0.0.1",
+			"port": 7890,
+			"type": 0
+		},
+		"common": {
+			"name": "New 0",
+			"folder": "\/home\/chp\/Downloads",
+			"connect-timeout": 15,
+			"transmit-timeout": 30,
+			"retry-delay": 6,
+			"retry-limit": 99,
+			"retry-count": 0,
+			"max-connections": 1,
+			"max-upload-speed": 0,
+			"max-download-speed": 0,
+			"timestamp": 1
+		},
+		"category": {
+			"hosts": [
+				".edu",
+				".idv"
+			],
+			"schemes": [
+				"ftps",
+				"magnet"
+			],
+			"file-exts": [
+				"torrent",
+				"metalink"
+			],
+			"active-limit": 3,
+			"finished-limit": 300,
+			"recycled-limit": 300
+		}
+	},
+	"children": [
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 98774241,
+					"total": 98774241,
+					"elapsed": 11,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/github.com\/Fndroid\/clash_for_windows_pkg\/releases\/tag\/0.19.29",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1662204848,
+					"completed-time": 1662204860,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+					"uri": "https:\/\/objects.githubusercontent.com\/github-production-release-asset-2e65be\/153697551\/25c30b9c-fa73-42a2-9085-f11a363df98f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220903T113405Z&X-Amz-Expires=300&X-Amz-Signature=e7c54e38900bebaf98f4b9059988ec08830eec58dcf9bc18d9fb87a56aa29796&X-Amz-SignedHeaders=host&actor_id=42164573&key_id=0&repo_id=153697551&response-content-disposition=attachment%3B%20filename%3DClash.for.Windows-0.19.29-arm64-linux.tar.gz&response-content-type=application%2Foctet-stream",
+					"file": "Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+							"type": 0,
+							"state": 0,
+							"total": 98774241,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-arm64-linux.tar.gz.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 98354361,
+					"total": 98354361,
+					"elapsed": 9,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/github.com\/Fndroid\/clash_for_windows_pkg\/releases\/tag\/0.19.29",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1662204846,
+					"completed-time": 1662204856,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+					"uri": "https:\/\/objects.githubusercontent.com\/github-production-release-asset-2e65be\/153697551\/608fd655-641d-419f-a208-d57ba01db120?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220903T113400Z&X-Amz-Expires=300&X-Amz-Signature=e69229c99b7b1e60ab94f6752fba68c2d66fd4d684875b44001bd039b292a05b&X-Amz-SignedHeaders=host&actor_id=42164573&key_id=0&repo_id=153697551&response-content-disposition=attachment%3B%20filename%3DClash.for.Windows-0.19.29-x64-linux.tar.gz&response-content-type=application%2Foctet-stream",
+					"file": "Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+							"type": 0,
+							"state": 0,
+							"total": 98354361,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-x64-linux.tar.gz.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 98354361,
+					"total": 98354361,
+					"elapsed": 6,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/github.com\/Fndroid\/clash_for_windows_pkg\/releases\/tag\/0.19.29",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1662204498,
+					"completed-time": 1662204505,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+					"uri": "https:\/\/objects.githubusercontent.com\/github-production-release-asset-2e65be\/153697551\/608fd655-641d-419f-a208-d57ba01db120?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220903T112814Z&X-Amz-Expires=300&X-Amz-Signature=b1ce83add98c1d169dcef79d8d5fc937e50b1b369cb30b334d629fd10817a562&X-Amz-SignedHeaders=host&actor_id=42164573&key_id=0&repo_id=153697551&response-content-disposition=attachment%3B%20filename%3DClash.for.Windows-0.19.29-x64-linux.tar.gz&response-content-type=application%2Foctet-stream",
+					"file": "Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-x64-linux.tar.gz",
+							"type": 0,
+							"state": 0,
+							"total": 98354361,
+							"complete": 4194304
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-x64-linux.tar.gz.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 98774241,
+					"total": 98774241,
+					"elapsed": 7,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/github.com\/Fndroid\/clash_for_windows_pkg\/releases\/tag\/0.19.29",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1662204481,
+					"completed-time": 1662204488,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+					"uri": "https:\/\/objects.githubusercontent.com\/github-production-release-asset-2e65be\/153697551\/25c30b9c-fa73-42a2-9085-f11a363df98f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220903%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220903T112757Z&X-Amz-Expires=300&X-Amz-Signature=325c4264dcb6e606461e2c3dc3d5f09392eb58370ac7096213078adc41ff7c60&X-Amz-SignedHeaders=host&actor_id=42164573&key_id=0&repo_id=153697551&response-content-disposition=attachment%3B%20filename%3DClash.for.Windows-0.19.29-arm64-linux.tar.gz&response-content-type=application%2Foctet-stream",
+					"file": "Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-arm64-linux.tar.gz",
+							"type": 0,
+							"state": 0,
+							"total": 98774241,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Clash.for.Windows-0.19.29-arm64-linux.tar.gz.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 824520704,
+					"total": 824520704,
+					"elapsed": 87,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/mirrors.163.com\/archlinux\/iso\/2022.08.05\/",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1662169581,
+					"completed-time": 1662169669,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "archlinux-2022.08.05-x86_64.iso",
+					"uri": "https:\/\/mirrors.163.com\/archlinux\/iso\/2022.08.05\/archlinux-2022.08.05-x86_64.iso",
+					"file": "archlinux-2022.08.05-x86_64.iso",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/archlinux-2022.08.05-x86_64.iso",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/archlinux-2022.08.05-x86_64.iso.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 34358839,
+					"total": 34358839,
+					"elapsed": 3,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/github.com\/retorquere\/zotero-better-bibtex\/releases\/tag\/v6.7.21",
+					"cookie-file": "\/home\/chp\/.config\/uGet\/attachment\/196D40AF.cookie",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1660995464,
+					"completed-time": 1660995467,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "zotero-better-bibtex-6.7.21.xpi",
+					"uri": "https:\/\/github.com\/retorquere\/zotero-better-bibtex\/releases\/download\/v6.7.21\/zotero-better-bibtex-6.7.21.xpi",
+					"file": "zotero-better-bibtex-6.7.21.xpi",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/zotero-better-bibtex-6.7.21.xpi",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/zotero-better-bibtex-6.7.21.xpi.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 5467907,
+					"total": 5467907,
+					"elapsed": 22,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/18602078\/03df0a",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1660754701,
+					"completed-time": 1660754724,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "凤凰架构：构建可靠的大型分布式系统 (周志明) (z-lib.org).pdf",
+					"uri": "https:\/\/p300.zlibcdn.com\/dtoken\/c7e880ecd899c694f916391343ace833",
+					"file": "凤凰架构：构建可靠的大型分布式系统 (周志明) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/凤凰架构：构建可靠的大型分布式系统 (周志明) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/凤凰架构：构建可靠的大型分布式系统 (周志明) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 8961437,
+					"total": 8961437,
+					"elapsed": 114,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/pan.baidu.com\/s\/1mt5zJ8K3_iyXwr8Pk4QWPA",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1660750875,
+					"completed-time": 1660750990,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "koreader词典_牛津双解_柯林斯英英.7z",
+					"uri": "https:\/\/xaky-cm01.baidupcs.com\/file\/d454eff7ag73736e0a7f2051ad8e902e?bkt=en-24c643f198a62f88a25f7076141f400d95efa91d544fadbee29e047cee6b485e044d4d6ea05a466e&fid=2483469063-250528-31585435877843&time=1660750871&sign=FDTAXUbGERLQlBHSKfWqiu-DCb740ccc5511e5e8fedcff06b081203-o%2ByBUvw%2BN3HXOTscoXwaXy4wQfA%3D&to=421&size=8961437&sta_dx=8961437&sta_cs=74&sta_ft=7z&sta_ct=7&sta_mt=7&fm2=MH%2CXian%2CAnywhere%2C%2Czhejiang%2Ccmnet&ctime=1594570046&mtime=1595984557&resv0=-1&resv1=0&resv2=rlim&resv3=5&resv4=8961437&vuk=2771480562&iv=0&htype=&randtype=&tkbind_id=0&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=en-dacd286965285df76fa1701392fcaadd688e6e5918deed1485d6913f4515052d15fa49f09c566aaf&sl=76480590&expires=8h&rt=sh&r=238268087&vbdid=1036201761&fin=koreader%E8%AF%8D%E5%85%B8_%E7%89%9B%E6%B4%A5%E5%8F%8C%E8%A7%A3_%E6%9F%AF%E6%9E%97%E6%96%AF%E8%8B%B1%E8%8B%B1.7z&fn=koreader%E8%AF%8D%E5%85%B8_%E7%89%9B%E6%B4%A5%E5%8F%8C%E8%A7%A3_%E6%9F%AF%E6%9E%97%E6%96%AF%E8%8B%B1%E8%8B%B1.7z&rtype=1&dp-logid=8769617963460139784&dp-callid=0.1&hps=1&tsl=80&csl=80&fsl=-1&csign=c3oSVhrK%2FzqYbyh3vnjoKNjqZfI%3D&so=0&ut=6&uter=4&serv=0&uc=696843865&ti=068bcab50ae430c718325aaa3b1c0ddadea68a1dee0ce3ac&hflag=30&from_type=1&adg=c_6f2ff34c9d971a518a9f3e5c86bca0cc&reqlabel=250528_f_97c5db18caa5d76bd4cf2d82f5d9ef37_-1_ba619bb5200c7944b6e75eac2f3da57b&by=themis&resvsflag=1-0-0-1-1-1",
+					"file": "koreader词典_牛津双解_柯林斯英英.7z",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/koreader词典_牛津双解_柯林斯英英.7z",
+							"type": 0,
+							"state": 0,
+							"total": 8961437,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/koreader词典_牛津双解_柯林斯英英.7z.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 3617725,
+					"total": 3617725,
+					"elapsed": 66,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/hk1lib.org\/book\/1176737\/27784b",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1660142400,
+					"completed-time": 1660142467,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "A Tale of Two Cities (Charles Dickens) (z-lib.org).epub",
+					"uri": "https:\/\/bunker2.zlibcdn.com\/dtoken\/bbc0560837b1604b1d4d88ef2dd08f56",
+					"file": "A Tale of Two Cities (Charles Dickens) (z-lib.org).epub",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/A Tale of Two Cities (Charles Dickens) (z-lib.org).epub",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/A Tale of Two Cities (Charles Dickens) (z-lib.org).epub.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 54946515,
+					"total": 54946515,
+					"elapsed": 15,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.apkmirror.com\/apk\/tacit-dynamics\/foldersync\/foldersync-3-2-7-release\/foldersync-3-2-7-2-android-apk-download\/download\/?key=58012b6e77fb77d588703222f87b506b4262480f&forcebaseapk=true",
+					"cookie-file": "\/home\/chp\/.config\/uGet\/attachment\/4F9F851C.cookie",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659889312,
+					"completed-time": 1659889327,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "dk.tacit.android.foldersync.lite_3.2.7-2020100083_minAPI23(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk",
+					"uri": "https:\/\/www.apkmirror.com\/wp-content\/uploads\/2022\/07\/74\/62e91525bad28\/dk.tacit.android.foldersync.lite_3.2.7-2020100083_minAPI23(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk?verify=1659889009-ktQ0Yx18n_0ENZ5YL0SnoafVAz4bxOYKwnt1eupsYG0",
+					"file": "dk.tacit.android.foldersync.lite_3.2.7-2020100083_minAPI23(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/dk.tacit.android.foldersync.lite_3.2.7-2020100083_minAPI23(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk",
+							"type": 0,
+							"state": 0,
+							"total": 54946515,
+							"complete": 2097152
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/dk.tacit.android.foldersync.lite_3.2.7-2020100083_minAPI23(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 19311524,
+					"total": 19311524,
+					"elapsed": 2,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.apkmirror.com\/apk\/metactrl\/autosync-universal-cloud-sync-and-backup\/autosync-universal-cloud-sync-and-backup-5-0-43-release\/autosync-file-sync-backup-5-0-43-android-apk-download\/download\/?key=8f05faf2ba6362f3f2ddf0c9725bc4037c08ddde",
+					"cookie-file": "\/home\/chp\/.config\/uGet\/attachment\/21E8E0ED.cookie",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659884575,
+					"completed-time": 1659884577,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "com.ttxapps.autosync_5.0.43-2208061_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk",
+					"uri": "https:\/\/www.apkmirror.com\/wp-content\/uploads\/2022\/08\/93\/62ee567106bb5\/com.ttxapps.autosync_5.0.43-2208061_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk?verify=1659884270-zQ8-PUaMeinyFmhc1P4P6rcJwQo3_lzdMy4kq-zYVxc",
+					"file": "com.ttxapps.autosync_5.0.43-2208061_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/com.ttxapps.autosync_5.0.43-2208061_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk",
+							"type": 0,
+							"state": 0,
+							"total": 19311524,
+							"complete": 3145728
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/com.ttxapps.autosync_5.0.43-2208061_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 9990059,
+					"total": 9990059,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/apkpure.com\/zoo-for-zotero\/com.mickstarify.zooforzotero\/download?from=details",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659583696,
+					"completed-time": 1659583701,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Zoo for Zotero_v3.0b_apkpure.com.apk",
+					"uri": "https:\/\/d-13.winudf.com\/b\/APK\/Y29tLm1pY2tzdGFyaWZ5Lnpvb2ZvcnpvdGVyb180N183YjcyN2Q0Zg?_fn=Wm9vIGZvciBab3Rlcm9fdjMuMGJfYXBrcHVyZS5jb20uYXBr&_p=Y29tLm1pY2tzdGFyaWZ5Lnpvb2ZvcnpvdGVybw&am=2kGNBv59lFuLa-TFxQ13uw&at=1659583689&download_id=otr_1923804723511721&k=12edb6d6df0d9c541dce210e5fb7c7c962ec8e49&r=https%3A%2F%2Fapkpure.com%2Fzoo-for-zotero%2Fcom.mickstarify.zooforzotero",
+					"file": "Zoo for Zotero_v3.0b_apkpure.com.apk",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Zoo for Zotero_v3.0b_apkpure.com.apk",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Zoo for Zotero_v3.0b_apkpure.com.apk.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2702854,
+					"total": 2702854,
+					"elapsed": 5,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/11061515\/0611b9?dsource=recommend",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659517637,
+					"completed-time": 1659517642,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Refactoring Improving the Design of Existing Code (Fowler, MartinBeck, Kent(Contributor)Roberts etc.) (z-lib.org).pdf",
+					"uri": "https:\/\/p302.zlibcdn.com\/dtoken\/048c1ff74e46a16ed5d6838be4ef3a6f",
+					"file": "Refactoring Improving the Design of Existing Code (Fowler, MartinBeck, Kent(Contributor)Roberts etc.) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Refactoring Improving the Design of Existing Code (Fowler, MartinBeck, Kent(Contributor)Roberts etc.) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Refactoring Improving the Design of Existing Code (Fowler, MartinBeck, Kent(Contributor)Roberts etc.) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 4736345,
+					"total": 4736345,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/5550519\/c4e4db",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659517251,
+					"completed-time": 1659517256,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Refactoring Improving the Design of Existing Code (Martin Fowler) (z-lib.org).pdf",
+					"uri": "https:\/\/p302.zlibcdn.com\/dtoken\/b21e5d102b2e84b2dbb48ff7030b98e4",
+					"file": "Refactoring Improving the Design of Existing Code (Martin Fowler) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Refactoring Improving the Design of Existing Code (Martin Fowler) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Refactoring Improving the Design of Existing Code (Martin Fowler) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 921281,
+					"total": 921281,
+					"elapsed": 14,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/19285998\/0bc406",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659517052,
+					"completed-time": 1659517067,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org)-1.pdf",
+					"uri": "https:\/\/bunker4.zlibcdn.com\/dtoken\/83267f4e68ed5f246ef2fdeff461ab15",
+					"file": "The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org)-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org)-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org)-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 8603170,
+					"total": 8603170,
+					"elapsed": 26,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/5741852\/c1ed06",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659517033,
+					"completed-time": 1659517060,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "sed awk, 2nd Edition (Dale Dougherty Arnold Robbins [Dougherty etc.) (z-lib.org).pdf",
+					"uri": "https:\/\/swab.zlibcdn.com\/dtoken\/d4f69b42370f983cce4d060d8c471332",
+					"file": "sed awk, 2nd Edition (Dale Dougherty Arnold Robbins [Dougherty etc.) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/sed awk, 2nd Edition (Dale Dougherty Arnold Robbins [Dougherty etc.) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/sed awk, 2nd Edition (Dale Dougherty Arnold Robbins [Dougherty etc.) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 8204128,
+					"total": 8204128,
+					"elapsed": 12,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/1129599\/171246",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659516647,
+					"completed-time": 1659516660,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org).pdf",
+					"uri": "https:\/\/p303.zlibcdn.com\/dtoken\/2d4b8c910bb3f0e68e5b3c52a711e6f8",
+					"file": "The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The AWK Programming Language (Alfred V. Aho, Brian W. Kernighan etc.) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 802417,
+					"total": 802417,
+					"elapsed": 3,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/836037\/7e2775",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659514391,
+					"completed-time": 1659514394,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+					"uri": "https:\/\/p303.zlibcdn.com\/dtoken\/14b1a35c606996db6f061fb36af40546",
+					"file": "Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Tale of Two Cities (Charles Dickens) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 5532388,
+					"total": 5532388,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/b-ok.cc\/book\/699347\/58c303",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659514333,
+					"completed-time": 1659514338,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "A Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+					"uri": "https:\/\/p303.zlibcdn.com\/dtoken\/56f30cef331f7c3bdecdee72911e266c",
+					"file": "A Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/A Tale of Two Cities (Charles Dickens) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/A Tale of Two Cities (Charles Dickens) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 13939713,
+					"total": 13939713,
+					"elapsed": 122,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/5540618\/4d89de",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659501099,
+					"completed-time": 1659501222,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "20世纪思想史：从弗洛伊德到互联网（上下册) (彼得•沃森) (z-lib.org).pdf",
+					"uri": "https:\/\/bunker4.zlibcdn.com\/dtoken\/8b91f4e58faca97993664d64b743fa71",
+					"file": "20世纪思想史：从弗洛伊德到互联网（上下册) (彼得•沃森) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/20世纪思想史：从弗洛伊德到互联网（上下册) (彼得•沃森) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/20世纪思想史：从弗洛伊德到互联网（上下册) (彼得•沃森) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2281247,
+					"total": 2281247,
+					"elapsed": 17,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/18799506\/0ecadb",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659501175,
+					"completed-time": 1659501193,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+					"uri": "https:\/\/bunker4.zlibcdn.com\/dtoken\/5b81363975ff9a2586c4d0a2206af4b9",
+					"file": "刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 1720919,
+					"total": 1720919,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/18788016\/8297ee",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659501147,
+					"completed-time": 1659501152,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+					"uri": "https:\/\/p303.zlibcdn.com\/dtoken\/15b6968889a3c954c6d482c59386b525",
+					"file": "刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/刘擎西方现代思想讲义 (刘擎) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 26035331,
+					"total": 26035331,
+					"elapsed": 283,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/19183420\/e97b3f",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659500555,
+					"completed-time": 1659500838,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org)-1.pdf",
+					"uri": "https:\/\/bunker2.zlibcdn.com\/dtoken\/6ea3e368cbe0301ba38efb7350044277",
+					"file": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org)-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org)-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org)-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 9531380,
+					"total": 9531380,
+					"elapsed": 126,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/1171494\/1f4240",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659500176,
+					"completed-time": 1659500302,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).pdf",
+					"uri": "https:\/\/bunker4.zlibcdn.com\/dtoken\/f4912fef1f98f17f41ae6b358f2b6eed",
+					"file": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 1873215,
+					"total": 1873215,
+					"elapsed": 6,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/1243727\/253ac5?dsource=recommend",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659500275,
+					"completed-time": 1659500281,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "C程序设计语言 (Kernighan, Ritchie) (z-lib.org).pdf",
+					"uri": "https:\/\/swab.zlibcdn.com\/dtoken\/6fb4ebf2cb3741227c15cccf82640476",
+					"file": "C程序设计语言 (Kernighan, Ritchie) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/C程序设计语言 (Kernighan, Ritchie) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 1873215,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/C程序设计语言 (Kernighan, Ritchie) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2900111,
+					"total": 2900111,
+					"elapsed": 10,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/633119\/db5c78",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659500262,
+					"completed-time": 1659500272,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The ANSI C Programming Language (Brian W. Kernighan, Dennis M. Ritchie) (z-lib.org).pdf",
+					"uri": "https:\/\/swab.zlibcdn.com\/dtoken\/fcc1067e7f8d168c93402e8c2b1c2263",
+					"file": "The ANSI C Programming Language (Brian W. Kernighan, Dennis M. Ritchie) (z-lib.org).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The ANSI C Programming Language (Brian W. Kernighan, Dennis M. Ritchie) (z-lib.org).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The ANSI C Programming Language (Brian W. Kernighan, Dennis M. Ritchie) (z-lib.org).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 1543303,
+					"total": 1543303,
+					"elapsed": 26,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/book4you.org\/book\/1171494\/1f4240",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659499142,
+					"completed-time": 1659499169,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).epub",
+					"uri": "https:\/\/bunker4.zlibcdn.com\/dtoken\/4ce6b4822fbfbae03f16269255f735f9",
+					"file": "The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).epub",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).epub",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The Modern Mind An Intellectual History of the 20th Century (Peter Watson) (z-lib.org).epub.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 4147960,
+					"total": 4147960,
+					"elapsed": 15,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/operating-systems-three-easy-pieces-d157868341.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659459392,
+					"completed-time": 1659459408,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Operating Systems Three Easy Pieces ( PDFDrive ).pdf",
+					"uri": "https:\/\/f9uxr8wsjp.pdcdn1.top\/dl2.php?id=157868341&h=83fda9bc51ba0735974a35c4a046e9d9&u=cache&ext=pdf&n=Operating%20systems%20three%20easy%20pieces",
+					"file": "Operating Systems Three Easy Pieces ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Operating Systems Three Easy Pieces ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Operating Systems Three Easy Pieces ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 560909,
+					"total": 560909,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/c-programming-language-2nd-edition-d156763132.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659457198,
+					"completed-time": 1659457203,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "C Programming Language (2nd Edition) ( PDFDrive ).pdf",
+					"uri": "https:\/\/ct69trfxac.pdcdn1.top\/dl2.php?id=156763132&h=5013a19e2b20b82d104bae34ac7e5320&u=cache&ext=pdf&n=C%20programming%20language%202nd%20edition",
+					"file": "C Programming Language (2nd Edition) ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/C Programming Language (2nd Edition) ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/C Programming Language (2nd Edition) ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2474360,
+					"total": 2474360,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/the-c-programming-language-d158849167.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659457052,
+					"completed-time": 1659457057,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The C programming language ( PDFDrive ).pdf",
+					"uri": "https:\/\/iy3032md6p.pdcdn1.top\/dl2.php?id=158849167&h=c25030abbeaf50f08fc16e3d9752529d&u=cache&ext=pdf&n=The%20c%20programming%20language",
+					"file": "The C programming language ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The C programming language ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The C programming language ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 1049717,
+					"total": 1049717,
+					"elapsed": 6,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/the-c-programming-language-d157962715.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659457045,
+					"completed-time": 1659457051,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The C Programming Language ( PDFDrive ).pdf",
+					"uri": "https:\/\/rf56k6xnrz.pdcdn1.top\/dl2.php?id=157962715&h=a6674f8f1bf051eed877c0e92b42d93f&u=cache&ext=pdf&n=The%20c%20programming%20language",
+					"file": "The C Programming Language ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The C Programming Language ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The C Programming Language ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 669147,
+					"total": 669147,
+					"elapsed": 4,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/the-c-programming-language-university-of-southampton-d17320456.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659457013,
+					"completed-time": 1659457017,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "The C-programming language - University of Southampton ( PDFDrive ).pdf",
+					"uri": "https:\/\/bsgvy3bbvg.pdcdn1.top\/dl2.php?id=17320456&h=0d3d979c82275eaf48ee876e39400c18&u=cache&ext=pdf&n=The%20c-programming%20language%20-%20university%20of%20southampton",
+					"file": "The C-programming language - University of Southampton ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/The C-programming language - University of Southampton ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/The C-programming language - University of Southampton ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 5295563,
+					"total": 5295563,
+					"elapsed": 24,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/structure-and-interpretation-of-computer-programs-d33406933.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455582,
+					"completed-time": 1659455606,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Structure and Interpretation of Computer Programs ( PDFDrive )-1.pdf",
+					"uri": "https:\/\/x7lf87e2f3.pdcdn1.top\/dl2.php?id=33406933&h=3bed4a05ae7fc66cd90c2e292c70d2b4&u=cache&ext=pdf&n=Structure%20and%20interpretation%20of%20computer%20programs",
+					"file": "Structure and Interpretation of Computer Programs ( PDFDrive )-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs ( PDFDrive )-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs ( PDFDrive )-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 4584542,
+					"total": 4584542,
+					"elapsed": 18,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/structure-and-interpretation-of-computer-programs-d9112463.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455563,
+					"completed-time": 1659455582,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Structure and Interpretation of Computer Programs ( PDFDrive ).pdf",
+					"uri": "https:\/\/8b1qwqj3i1.pdcdn1.top\/dl2.php?id=9112463&h=480fe74fe104d87fc504da0ef24d85af&u=cache&ext=pdf&n=Structure%20and%20interpretation%20of%20computer%20programs",
+					"file": "Structure and Interpretation of Computer Programs ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2216220,
+					"total": 2216220,
+					"elapsed": 9,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/structure-and-interpretation-of-computer-programs-2nd-edition-mit-electrical-engineering-and-computer-science-d185979116.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455571,
+					"completed-time": 1659455581,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-2.pdf",
+					"uri": "https:\/\/a4n8jo4d7r.pdcdn1.top\/dl2.php?id=185979116&h=a11607b23ba9c3bd6f97ae123207997c&u=cache&ext=pdf&n=Structure%20and%20interpretation%20of%20computer%20programs%20-%202nd%20edition%20mit%20electrical%20engineering%20and%20computer%20science",
+					"file": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-2.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-2.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-2.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 3772361,
+					"total": 3772361,
+					"elapsed": 18,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/structure-and-interpretation-of-computer-programs-2nd-edition-mit-electrical-engineering-and-computer-science-d158608409.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455555,
+					"completed-time": 1659455574,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-1.pdf",
+					"uri": "https:\/\/xm7shxc82c.pdcdn1.top\/dl2.php?id=158608409&h=2f8800a7b88c5c81eea1a04c6fa3e1bc&u=cache&ext=pdf&n=Structure%20and%20interpretation%20of%20computer%20programs%20-%202nd%20edition%20mit%20electrical%20engineering%20and%20computer%20science",
+					"file": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive )-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 3772361,
+					"total": 3772361,
+					"elapsed": 19,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/structure-and-interpretation-of-computer-programs-2nd-edition-mit-electrical-engineering-and-computer-science-d158608409.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455548,
+					"completed-time": 1659455567,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive ).pdf",
+					"uri": "https:\/\/baxfcaq01q.pdcdn1.top\/dl2.php?id=158608409&h=2f8800a7b88c5c81eea1a04c6fa3e1bc&u=cache&ext=pdf&n=Structure%20and%20interpretation%20of%20computer%20programs%20-%202nd%20edition%20mit%20electrical%20engineering%20and%20computer%20science",
+					"file": "Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Structure and Interpretation of Computer Programs - 2nd Edition (MIT Electrical Engineering and Computer Science) ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 20685280,
+					"total": 20685280,
+					"elapsed": 109,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/advanced-programming-in-the-unix-environment-d46094427.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455381,
+					"completed-time": 1659455491,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Advanced Programming in the UNIX® Environment ( PDFDrive )-1.pdf",
+					"uri": "https:\/\/ftebmqulzd.pdcdn1.top\/dl2.php?id=46094427&h=5dc46842acde5fbcadfab4612cdecbbc&u=cache&ext=pdf&n=Advanced%20programming%20in%20the%20unix%20environment",
+					"file": "Advanced Programming in the UNIX® Environment ( PDFDrive )-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Advanced Programming in the UNIX® Environment ( PDFDrive )-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Advanced Programming in the UNIX® Environment ( PDFDrive )-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 20685280,
+					"total": 20685280,
+					"elapsed": 55,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/advanced-programming-in-the-unix-environment-d44767171.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455296,
+					"completed-time": 1659455351,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Advanced Programming in the UNIX® Environment ( PDFDrive ).pdf",
+					"uri": "https:\/\/assko42m5z.pdcdn1.top\/dl2.php?id=44767171&h=5dc46842acde5fbcadfab4612cdecbbc&u=cache&ext=pdf&n=Advanced%20programming%20in%20the%20unix%20environment",
+					"file": "Advanced Programming in the UNIX® Environment ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Advanced Programming in the UNIX® Environment ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Advanced Programming in the UNIX® Environment ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 9887524,
+					"total": 9887524,
+					"elapsed": 54,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/code-the-hidden-language-of-computer-hardware-and-software-d175268689.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455093,
+					"completed-time": 1659455147,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Code The Hidden Language of Computer Hardware and Software ( PDFDrive ).pdf",
+					"uri": "https:\/\/awba1e51m9.pdcdn1.top\/dl2.php?id=175268689&h=a5d70f4d1f222cf2400c514859243d4a&u=cache&ext=pdf&n=Code%20the%20hidden%20language%20of%20computer%20hardware%20and%20software",
+					"file": "Code The Hidden Language of Computer Hardware and Software ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Code The Hidden Language of Computer Hardware and Software ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Code The Hidden Language of Computer Hardware and Software ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2687905,
+					"total": 2687905,
+					"elapsed": 20,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/code-the-hidden-language-of-computer-hardware-and-software-d175804931.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659455105,
+					"completed-time": 1659455126,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Code The Hidden Language of Computer Hardware and Software ( PDFDrive )-1.pdf",
+					"uri": "https:\/\/newgoa8qon.pdcdn1.top\/dl2.php?id=175804931&h=97e5afbbe6d006cbdf5d534613882652&u=cache&ext=pdf&n=Code%20the%20hidden%20language%20of%20computer%20hardware%20and%20software",
+					"file": "Code The Hidden Language of Computer Hardware and Software ( PDFDrive )-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Code The Hidden Language of Computer Hardware and Software ( PDFDrive )-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Code The Hidden Language of Computer Hardware and Software ( PDFDrive )-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 17215752,
+					"total": 17215752,
+					"elapsed": 59,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/unix-network-programming-volume-1-the-sockets-networking-api-3rd-edition-d157767009.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659454592,
+					"completed-time": 1659454651,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Unix Network Programming, Volume 1 The Sockets Networking API (3rd Edition) ( PDFDrive ).pdf",
+					"uri": "https:\/\/uwrda33p8t.pdcdn1.top\/dl2.php?id=157767009&h=0059ebb9e419caa10f0224605adb078d&u=cache&ext=pdf&n=Unix%20network%20programming%20volume%201%20the%20sockets%20networking%20api%203rd%20edition",
+					"file": "Unix Network Programming, Volume 1 The Sockets Networking API (3rd Edition) ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Unix Network Programming, Volume 1 The Sockets Networking API (3rd Edition) ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Unix Network Programming, Volume 1 The Sockets Networking API (3rd Edition) ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 5747264,
+					"total": 5747264,
+					"elapsed": 36,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/c-primer-d157860144.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659454469,
+					"completed-time": 1659454505,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "C++ Primer ( PDFDrive ).pdf",
+					"uri": "https:\/\/fogr1gw978.pdcdn1.top\/dl2.php?id=157860144&h=d7b02bd304bc1ad69d406206be02dfdb&u=cache&ext=pdf&n=C%20primer",
+					"file": "C++ Primer ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 52803022,
+					"total": 52803022,
+					"elapsed": 107,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/c-primer-fifth-edition-d40377195.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659454209,
+					"completed-time": 1659454316,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "C++ Primer, Fifth Edition ( PDFDrive ).pdf",
+					"uri": "https:\/\/9m23zuzcgu.pdcdn1.top\/dl2.php?id=40377195&h=732df2f1f683b3c7bbaca1ed264cd6b7&u=cache&ext=pdf&n=C%20primer%20fifth%20edition",
+					"file": "C++ Primer, Fifth Edition ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer, Fifth Edition ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer, Fifth Edition ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 13139114,
+					"total": 13139114,
+					"elapsed": 44,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/c-primer-5th-edition-d158392725.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659454218,
+					"completed-time": 1659454263,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "C++ Primer (5th Edition) ( PDFDrive ).pdf",
+					"uri": "https:\/\/89wgij1bbk.pdcdn1.top\/dl2.php?id=158392725&h=192a071a3b987ce4923c544c5e182016&u=cache&ext=pdf&n=C%20primer%205th%20edition",
+					"file": "C++ Primer (5th Edition) ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer (5th Edition) ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/C++ Primer (5th Edition) ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 12767510,
+					"total": 12767510,
+					"elapsed": 43,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/design-patterns-elements-of-reusable-object-oriented-software-d193223129.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659454054,
+					"completed-time": 1659454097,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive )-1.pdf",
+					"uri": "https:\/\/2pqivsym9d.pdcdn1.top\/dl2.php?id=193223129&h=c2c7f6f6db4b762c6a427ecd32e5170b&u=cache&ext=pdf&n=Design%20patterns%20elements%20of%20reusable%20object-oriented%20software",
+					"file": "Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive )-1.pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive )-1.pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive )-1.pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 2574844,
+					"total": 2574844,
+					"elapsed": 11,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/design-patterns-elements-of-reusable-object-oriented-software-d161314266.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659453915,
+					"completed-time": 1659453926,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive ).pdf",
+					"uri": "https:\/\/bk58utzr11.pdcdn1.top\/dl2.php?id=161314266&h=a2048e50b97a4f4560dc7de65a1e2770&u=cache&ext=pdf&n=Design%20patterns%20elements%20of%20reusable%20object-oriented%20software",
+					"file": "Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/Design Patterns Elements of Reusable Object-Oriented Software ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 39820078,
+					"total": 39820078,
+					"elapsed": 129,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/tcpip-illustrated-vol-2-the-implementation-d183865634.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659453482,
+					"completed-time": 1659453613,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+					"uri": "https:\/\/b8xpkfksy5.pdcdn1.top\/dl2.php?id=183865634&h=f0e3ccfb701cb83db244e681b88b68d1&u=cache&ext=pdf&n=Tcpip%20illustrated%20vol%202%20the%20implementation",
+					"file": "TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 37930313,
+					"total": 37930313,
+					"elapsed": 116,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/tcp-ip-illustrated-volume-2-the-implementation-d157572787.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659453484,
+					"completed-time": 1659453601,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "TCP IP Illustrated, Volume 2 The implementation ( PDFDrive ).pdf",
+					"uri": "https:\/\/50ngdjaxpz.pdcdn1.top\/dl2.php?id=157572787&h=f9bc2f83920448e10a97b59dc838630c&u=cache&ext=pdf&n=Tcp%20ip%20illustrated%20volume%202%20the%20implementation",
+					"file": "TCP IP Illustrated, Volume 2 The implementation ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/TCP IP Illustrated, Volume 2 The implementation ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/TCP IP Illustrated, Volume 2 The implementation ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		},
+		{
+			"info": {
+				"relation": {
+					"group": 72,
+					"priority": 1
+				},
+				"progress": {
+					"complete": 39820078,
+					"total": 39820078,
+					"elapsed": 166,
+					"uploaded": 0,
+					"percent": 100
+				},
+				"http": {
+					"referrer": "https:\/\/www.pdfdrive.com\/tcpip-illustrated-vol-2-the-implementation-d183865634.html",
+					"redirection-limit": 30
+				},
+				"proxy": {
+					"host": "127.0.0.1",
+					"port": 7890,
+					"type": 0
+				},
+				"log": {
+					"added-time": 1659453354,
+					"completed-time": 1659453522,
+					"messages": [
+					]
+				},
+				"common": {
+					"name": "TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+					"uri": "https:\/\/w1y0zaywy1.pdcdn1.top\/dl2.php?id=183865634&h=f0e3ccfb701cb83db244e681b88b68d1&u=cache&ext=pdf&n=Tcpip%20illustrated%20vol%202%20the%20implementation",
+					"file": "TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+					"folder": "\/home\/chp\/Downloads",
+					"connect-timeout": 15,
+					"transmit-timeout": 30,
+					"retry-delay": 6,
+					"retry-limit": 99,
+					"retry-count": 0,
+					"max-connections": 1,
+					"max-upload-speed": 0,
+					"max-download-speed": 0,
+					"timestamp": 1
+				},
+				"files": {
+					"list": [
+						{
+							"path": "\/home\/chp\/Downloads\/TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf",
+							"type": 0,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						},
+						{
+							"path": "\/home\/chp\/Downloads\/TCP_IP Illustrated. vol. 2 The Implementation ( PDFDrive ).pdf.aria2",
+							"type": 3,
+							"state": 0,
+							"total": 0,
+							"complete": 0
+						}
+					]
+				}
+			},
+			"children": [
+			]
+		}
+	]
+}
+
