@@ -109,8 +109,8 @@ up () {
 
 # Changing "ls" to "exa"
 alias ls='exa --color=always --group-directories-first' # my preferred listing
-alias la='exa -al --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
+alias la='exa -l --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -al --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
@@ -123,17 +123,28 @@ alias gst='git status'
 alias gp='git push'
 
 
-# pacman and yay
+# pacman yay paru
 alias pacs='sudo pacman -S'
-alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
-alias paccc='sudo pacman -Scc'
+alias pacsyu='sudo pacman -Syu'                  
+alias pacsyyu='sudo pacman -Syyu'                
+alias pacscc='sudo pacman -Scc'
 alias yays='yay -S'
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias yaycc='yay -Scc'
+alias yaysua='yay -Sua --noconfirm'              
+alias yaysyu='yay -Syu --noconfirm'              
+alias yayscc='yay -Scc'
+alias parus='paru --skipreview -S'
+alias parusuu='paru -Suy --skipreview'            
+alias parusyy='paru -Syy'            
+alias parusua='paru -Sua'            
+alias parusyu='paru -Syu'            
+alias paruscc='paru -Scc'
+alias parur='paru -Rscun'
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+alias leanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+
+# pip
+alias pipinstall='pip install --user'
 
 # confirm before overwriting something
 alias cp="cp -i"
