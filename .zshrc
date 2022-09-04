@@ -69,13 +69,17 @@ cdls() {
 
 function proxy_on() {
     export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
     export http_proxy="http://127.0.0.1:7890"
+    export HTTP_PROXY="http://127.0.0.1:7890"
     export https_proxy=$http_proxy
-    export all_proxy=socks5://127.0.0.1:7890
+    export HTTPS_PROXY=$http_proxy
+    export all_proxy="socks5://127.0.0.1:7890"
+    export ALL_PROXY="socks5://127.0.0.1:7890"
     echo "Proxy environment variable set."
 }
 function proxy_off(){
-    unset http_proxy http_proxy all_proxy
+    unset no_proxy NO_PROXY http_proxy HTTP_PROXY https_proxy HTTPS_PROXY all_proxy ALL_PROXY
     echo -e "Proxy environment variable removed."
 }
 proxy_on > /dev/null
@@ -169,7 +173,6 @@ alias zshrc="vim ~/.zshrc"
 alias config="cd ~/dotfiles"
 
 alias vim='nvim'
-alias obsidian='AppImageLauncher ~/Applications/Obsidian* &'
 
 # pass
 alias passpush='(cd ~/.password-store && git push)'
@@ -269,3 +272,13 @@ zinit light romkatv/powerlevel10k
 # hacker-quotes fzf per-directory-history
 
 colorscript random
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+### End of Zinit's installer chunk
