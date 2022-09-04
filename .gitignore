@@ -1,1 +1,3 @@
 .stow-local-ignore
+.config/copyq/copyq_tab_*
+.config/uGet/attachment/

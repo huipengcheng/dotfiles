@@ -6,14 +6,14 @@
 		"Summary": true,
 		"Banner": false,
 		"x": 8,
-		"y": 388,
-		"width": 1424,
-		"height": 1760,
+		"y": 28,
+		"width": 1904,
+		"height": 2120,
 		"maximized": false,
-		"NthCategory": 1,
+		"NthCategory": 0,
 		"NthStatus": 0,
-		"PanedPositionH": 210,
-		"PanedPositionV": 1512
+		"PanedPositionH": 459,
+		"PanedPositionV": 315
 	},
 	"Summary": {
 		"name": true,
@@ -40,21 +40,21 @@
 		"SortType": 1,
 		"SortNth": 0,
 		"Width": {
-			"state": 0,
-			"name": 0,
-			"complete": 0,
-			"total": 0,
-			"percent": 0,
-			"elapsed": 0,
-			"left": 0,
-			"speed": 0,
-			"UploadSpeed": 0,
+			"state": 18,
+			"name": 539,
+			"complete": 104,
+			"total": 70,
+			"percent": 60,
+			"elapsed": 87,
+			"left": 65,
+			"speed": 80,
+			"UploadSpeed": 100,
 			"uploaded": 0,
-			"ratio": 0,
-			"retry": 0,
+			"ratio": 62,
+			"retry": 63,
 			"category": 0,
 			"uri": 0,
-			"AddedOn": 0,
+			"AddedOn": 199,
 			"CompletedOn": 0
 		},
 		"completed": true
@@ -63,7 +63,7 @@
 		"ExitConfirmation": false,
 		"DeleteConfirmation": false,
 		"ShowTrayIcon": true,
-		"StartInTray": true,
+		"StartInTray": false,
 		"CloseToTray": true,
 		"StartInOfflineMode": false,
 		"StartNotification": true,
@@ -75,7 +75,7 @@
 	},
 	"Clipboard": {
 		"pattern": "BIN|ZIP|GZ|7Z|XZ|Z|TAR|TGZ|BZ2|LZH|A[0-9]?|RAR|R[0-9][0-9]|ISO|RPM|DEB|EXE|MSI|APK|3GP|AAC|FLAC|M4A|M4P|MP3|OGG|WAV|WMA|MP4|MKV|WEBM|OGV|AVI|MOV|WMV|FLV|F4V|MPG|MPEG|RMVB",
-		"monitor": false,
+		"monitor": true,
 		"quiet": false,
 		"NthCategory": 0,
 		"Website": true,
@@ -91,7 +91,7 @@
 		"quiet": false,
 		"NthCategory": 0
 	},
-	"PluginOrder": 3,
+	"PluginOrder": 0,
 	"PluginAria2": {
 		"launch": true,
 		"shutdown": true,
@@ -114,10 +114,7 @@
 		"OnError": null
 	},
 	"FolderHistory": [
-		"\/home\/chp\/Downloads",
-		"\/run\/media\/chp\/My Passport\/Movies",
-		"\/run\/media\/chp\/My Passport\/电影",
-		"\/home\/chp"
+		"\/home\/huipeng"
 	],
 	"AutoSave": 1,
 	"AutoSaveInterval": 3,
