@@ -21,3 +21,6 @@ export ZSH_CACHE_DIR="$XDG_CACHE_HOME/zsh"
 export HISTFILE="$ZSH_CACHE_DIR/.zhistory"        # History filepath
 export HISTSIZE=50000                         # Maximum events for internal history
 export SAVEHIST=10000                         # Maximum events in history file
+
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
