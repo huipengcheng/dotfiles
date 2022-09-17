@@ -6,7 +6,7 @@ if [ -f $LOG_FILE ]; then
     rm $LOG_FILE
 fi
 
-(xrandr --output eDP --mode 2880x1800 --pos 0x360 --rotate normal --output DisplayPort-0 --off --output DisplayPort-1 --off --output DisplayPort-2 --primary --mode 3840x2160 --pos 2880x0 --rotate normal --output DisplayPort-3 --off 2>> "${LOG_FILE}") &
+(xrandr --output DP-1 --set TearFree on --primary --mode 3840x2160 --rotate normal  2>> "${LOG_FILE}") &
 
 (cfw 2>> "${LOG_FILE}") &
 (fcitx5 2>> "${LOG_FILE}") & 
