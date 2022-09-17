@@ -13,7 +13,7 @@
 		"NthCategory": 0,
 		"NthStatus": 0,
 		"PanedPositionH": 459,
-		"PanedPositionV": 315
+		"PanedPositionV": 1914
 	},
 	"Summary": {
 		"name": true,
@@ -46,8 +46,8 @@
 			"total": 70,
 			"percent": 60,
 			"elapsed": 87,
-			"left": 65,
-			"speed": 80,
+			"left": 95,
+			"speed": 131,
 			"UploadSpeed": 100,
 			"uploaded": 0,
 			"ratio": 62,
@@ -114,6 +114,7 @@
 		"OnError": null
 	},
 	"FolderHistory": [
+		"\/home\/huipeng\/Downloads",
 		"\/home\/huipeng"
 	],
 	"AutoSave": 1,
