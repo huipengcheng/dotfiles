@@ -1,4 +1,3 @@
-
 ;;                               Configuration for most TKL keyboards
 ;;                       use this if you need numeric keypad in some scenarios
 ;;                   binded as numpad keys (not just numerics) for alt-codes input
@@ -34,17 +33,17 @@
     cus (layer-toggle cursor-movement)
 
     hyp (around rctl (around ralt (around rsft rmet))) ;; hyper key
-    toh (tap-next tab @cus) ;; tab when tap, hyper when hold
-    eoa (tap-next esc lalt) ;; esc when tap, lalt when hold
+    eoc (tap-next esc @cus) ;; esc when tap, @cus when hold
+    ;; eoa (tap-next esc lalt) ;; esc when tap, lalt when hold
 )
 
 (deflayer qwerty
   esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
   grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @eoa  a    s    d    f    g    h    j    k    l    ;    '    ret
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @eoc  a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft  z    x    c    v    b    n    m    ,    .    /    rsft up
-        @hyp lmet lctl           spc            rctl rmet left down rght
+        lalt lmet lctl           spc            rctl rmet left down rght
 )
 
 (deflayer cursor-movement
