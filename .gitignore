@@ -1,4 +1,8 @@
 .stow-local-ignore
-.config/copyq/copyq_tab_*
+
+.config/copyq/copyq_tab*
+.config/copyq/copyq.lock
+.config/copyq/copyq_geometry*
+
 .config/uGet/attachment/
 .config/uGet/category/
