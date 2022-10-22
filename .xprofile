@@ -6,7 +6,8 @@ if [ -f $LOG_FILE ]; then
     rm $LOG_FILE
 fi
 
-(xrandr --output DP-1 --set TearFree on --primary --mode 3840x2160 --rotate normal  2>> "${LOG_FILE}") &
+#(xrandr --output DP-1 --set TearFree on --primary --mode 3840x2160 --rotate normal  2>> "${LOG_FILE}") &
+(bash $HOME/.screenlayout/dual-left-vertical.sh 2>> "${LOG_FILE}")
 
 (cfw 2>> "${LOG_FILE}") &
 (fcitx5 2>> "${LOG_FILE}") & 
