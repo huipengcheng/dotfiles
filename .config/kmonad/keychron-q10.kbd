@@ -1,0 +1,84 @@
+;;                               Configuration for most TKL keyboards
+;;                       use this if you need numeric keypad in some scenarios
+;;                   binded as numpad keys (not just numerics) for alt-codes input
+
+(defcfg
+  ;; ** For Linux **
+  input  (device-file "/dev/input/by-id/usb-Keychron_Keychron_Q10-event-kbd") ;; Change this line for your device
+  ;; input  (device-file "/dev/input/by-id/usb-Matias_Ergo_Pro_Keyboard-event-kbd")
+  output (uinput-sink "KMonad output")
+
+  ;; ** For Windows **
+  ;; input  (low-level-hook)
+  ;; output (send-event-sink)
+
+  ;; ** For MacOS **
+  ;; input  (iokit-name "my-keyboard-product-string")
+  ;; output (kext)
+
+  fallthrough true
+)
+
+(defsrc
+  esc  f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+       lctl lalt lmet           spc            rmet ralt left down rght
+)
+ 
+
+(defalias
+    cus (layer-toggle cursor-movement)
+
+    hyp (around rctl (around ralt (around rsft rmet))) ;; hyper key
+    eoc (tap-next esc @cus) ;; esc when tap, @cus when hold
+    ;; eoa (tap-next esc lalt) ;; esc when tap, lalt when hold
+)
+
+(deflayer qwerty
+  esc   f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12
+  grv   1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab   q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @eoc  a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft  z    x    c    v    b    n    m    ,    .    /    rsft up
+        lalt lmet lctl           spc            rctl rmet left down rght
+)
+
+(deflayer cursor-movement
+  _     _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    _    _    _    _    _    _    _    _    _    _    _
+  _     _    _    end  _    _    _    _    _    _    up   _    _    _
+  _     home _    _    rght _    bspc _    _    _    _    _    _ 
+  _     _    _    _    _    left down _    _    _    _    _    _
+        _    _    _              _              _    _    _    _    _
+)
+
+
+;; (deflayer default
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _
+;;        _    _    _              _              _    _    _    _    _
+;; )
+
+;; (deflayer numpad
+;;   _       _    _    _    _    _    _    _    _    _    _    _    _              _    @def _
+;;   _       _    _    _    _    XX   kp/  kp7  kp8  kp9  kp-  _    _    _         _    _    _
+;;   _       _    _    _    _    XX   kp*  kp4  kp5  kp6  kp+  XX   XX   _         _    _    _
+;;   _       _    _    _    _    XX  XX    kp1  kp2  kp3  XX   _    _
+;;   _         _    _    _    _    _    XX   kp0  _    _    _    _                      _
+;;   _       _    _                 _              _    _    @nm2 _                _    _    _
+;; )
+
+;; (deflayer numbers
+;;   _       _    _    _    _    _    _    _    _    _    _    _    _              _    _    _
+;;   _       7    8    9    _    _    _    _    _    _    _    _    _    _         _    _    _
+;;   _       4    5    6    _    _    _    _    _    _    _    _    _    _         _    _    _
+;;   _       1    2    3    _    _    _    _    _    _    _    _    _
+;;   _         0    _    _    _    _    _    _    _    _    _    _                      _
+;;   _       _    _                 _              _    _    _    _                _    _    _
+;; )
