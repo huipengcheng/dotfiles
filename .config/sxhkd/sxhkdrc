@@ -1,0 +1,22 @@
+# Use pactl to adjust volume in PulseAudio.
+XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume @DEFAULT_SINK@ {+,-}10%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86AudioMicMute
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+control + shift + 4
+   gscreenshot -s -c
+
+super + Return
+    alacritty
+
+super + shift + Return
+    rofi -show run
+
+alt + {0,1,2,3,4,5,6,7,8,9}
+   i3-msg workspace {10,11,12,13,14,15,16,17,18,19}
+
