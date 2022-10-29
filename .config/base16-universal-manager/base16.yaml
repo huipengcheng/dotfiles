@@ -2,7 +2,7 @@
 #Colorscheme: base16-gruvbox-dark-medium
 Colorscheme: base16-onedark.yml
 
-GithubToken: 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
+GithubToken: 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
   #DryRun: true
 DryRun: false
 
@@ -34,3 +34,40 @@ applications:
         start_marker: '-- <<<<<<<<<<'
         end_marker: '-- >>>>>>>>>>'
 
+  i3status:
+    enabled: true
+    files:
+      default:
+        path: ~/.config/i3status/config
+        mode: replace
+        start_marker: "# <<<<<<<<<<"
+        end_marker: "# >>>>>>>>>>"
+
+  i3:
+    enabled: true
+    hook: i3-msg restart
+    files:
+      bar-colors:
+        path: ~/.config/i3/i3-bar
+        mode: replace
+        start_marker: "# <<<<<<<<<<bar-colors"
+        end_marker: "# >>>>>>>>>>bar-colors"
+      client-properties:
+        path: ~/.config/i3/i3-bar
+        mode: replace
+        start_marker: "# <<<<<<<<<<client-properties"
+        end_marker: "# >>>>>>>>>>client-properties"
+      colors:
+        path: ~/.config/i3/i3-bar
+        mode: replace
+        start_marker: "# <<<<<<<<<<colors"
+        end_marker: "# >>>>>>>>>>colors"
+
+  rofi:
+    enabled: true
+    files:
+      default:
+        path: ~/.config/rofi/config.rasi
+        mode: replace
+        start_marker: "// <<<<<<<<<<"
+        end_marker: "// >>>>>>>>>>"
