@@ -19,16 +19,18 @@ colors {
 
     colors {
         # override
+        statusline $base05
         focused_workspace   $base0D $base0D $base00
         inactive_workspace  $base01 $base01 $base05
     }
-    i3bar_command i3bar
+    i3bar_command i3bar -t
     tray_output primary
     tray_padding 2
-    font pango:UbuntuMono 10
+    font pango:UbuntuMono Nerd 10
     position top
     workspace_buttons yes
     strip_workspace_numbers yes
     binding_mode_indicator yes
-    status_command i3status
+    #status_command exec bash /home/huipeng/.config/i3status/network-speed.sh
+    status_command i3blocks
 }

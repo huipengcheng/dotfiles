@@ -1,9 +1,23 @@
+# <<<<<<<<<<
+## Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
+#
+# You can use these variables anywhere in the i3status configuration file.
+
 general {
-        output_format = "i3bar"
-        colors = true
-        interval = 5
+       color_good = "#98c379"
+       color_bad = "#e06c75"
+       color_degraded = "#e5c07b"
+}
+# >>>>>>>>>>
+
+general {
+       output_format = "i3bar"
+       colors = true
+       interval = 5
 }
 
+order += "volume master"
 order += "tztime local"
 order += "disk /"
 order += "wireless wlp41s0"
@@ -12,12 +26,18 @@ order += "memory"
 order += "load"
 
 wireless wlp41s0 {
-        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_up = "%speed"
         format_down = "W: down"
 }
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse:alsa_output.pci-0000_30_00.6.analog-stereo"
 }
 
 
