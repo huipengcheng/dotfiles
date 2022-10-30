@@ -1,0 +1,13 @@
+[bar/first-bar]
+height = 24pt
+dpi = 120
+font-0 = monospace
+
+modules-left = text
+
+tray-position = right
+
+[module/text]
+content = fas
+type = custom/text
+format = text
