@@ -15,3 +15,5 @@ fi
 (firefox 2>> "${LOG_FILE}") &
 (sleep 2 ; uget-gtk 2>> "${LOG_FILE}") &
 (copyq 2>> "${LOG_FILE}") &
+(nm-applet 2>> "${LOG_FILE}") &
+(sxhkd 2>> "${LOG_FILE}") &
