@@ -7,7 +7,7 @@ XF86AudioMute
 
 XF86AudioMicMute
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
-
+    
 control + shift + 4
    gscreenshot -s -c
 
@@ -17,6 +17,7 @@ super + Return
 super + shift + Return
     rofi -show run
 
-alt + {0,1,2,3,4,5,6,7,8,9}
-   i3-msg workspace {10,11,12,13,14,15,16,17,18,19}
-
+super + d ; {r,d,s,w}
+    rofi -modes "{run,drun,script,window}" -show
+super + d ; c
+    rofi -combi-modes "{run,drun,window,script}" -show combi
