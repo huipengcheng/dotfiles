@@ -117,8 +117,12 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+shift+space floating toggle
 bindsym $mod+space focus mode+toggle
 
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+shift+f move window to workspace number 99; workspace number 99; floating toggle
+bindsym $mod+shift+ctrl+f workspace number 99
+
+
+bindsym $mod+s layout toggle stacking split
+bindsym $mod+w layout toggle tabbed split
 bindsym $mod+e layout toggle split
 
 bindsym $mod+a focus parent
@@ -180,10 +184,10 @@ bindsym $mod+Tab move workspace to output next
 ########
 bindsym $mod+r mode "resize"
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 2 px or 2 ppt
+        bindsym j resize grow height 2 px or 2 ppt
+        bindsym k resize shrink height 2 px or 2 ppt
+        bindsym l resize grow width 2 px or 2 ppt
 
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
