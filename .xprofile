@@ -6,17 +6,23 @@ if [ -f $LOG_FILE ]; then
     rm $LOG_FILE
 fi
 
+(sleep 2 ; gtk-launch GoldenDict++.desktop 2>> "${LOG_FILE}") &
+
 #(bash $HOME/.screenlayout/dual-left-vertical.sh 2>> "${LOG_FILE}")
 (bash $HOME/.screenlayout/single.sh 2>> "${LOG_FILE}")
 
 (cfw 2>> "${LOG_FILE}") &
+
 (fcitx5 2>> "${LOG_FILE}") & 
-(sleep 2 ; gtk-launch GoldenDict++.desktop 2>> "${LOG_FILE}") &
+
 (firefox 2>> "${LOG_FILE}") &
+
 (sleep 2 ; uget-gtk 2>> "${LOG_FILE}") &
-(copyq 2>> "${LOG_FILE}") &
+
 (nm-applet 2>> "${LOG_FILE}") &
+
 (sxhkd 2>> "${LOG_FILE}") &
+
 (greenclip daemon 2>> "${LOG_FILE}") &
 
 feh --bg-scale /usr/share/backgrounds/fields_pp_full2.0.jpg
