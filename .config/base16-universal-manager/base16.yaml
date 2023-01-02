@@ -7,7 +7,7 @@ Colorscheme: base16-onedark.yml
 #Colorscheme: base16-material
 #Colorscheme: base16-gruvbox-material-dark-medium
 
-GithubToken: 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
+GithubToken: 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
   #DryRun: true
 DryRun: false
 
@@ -15,7 +15,7 @@ applications:
   alacritty:
     enabled: true
     files:
-      default:
+      default-256:
         path: ~/.config/alacritty/alacritty.yml
         mode: replace
         start_marker: "# <<<<<<<<<<"
@@ -76,3 +76,19 @@ applications:
         mode: replace
         start_marker: "// <<<<<<<<<<"
         end_marker: "// >>>>>>>>>>"
+
+
+  polybar:
+    enabled: true
+    files:
+      default:
+        path: ~/.config/polybar/base16.ini
+        mode: rewrite
+
+  fzf:
+    enabled: true
+    hook: bash ~/.config/fzf/fzf-base16.sh
+    files:
+      default:
+        path: ~/.config/fzf/fzf-base16.sh
+        mode: rewrite

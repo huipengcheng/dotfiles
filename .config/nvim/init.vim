@@ -40,6 +40,16 @@ Plug 'vimwiki/vimwiki'
 " Plug 'neovim/nvim-lspconfig'
 
 
+Plug 'farmergreg/vim-lastplace'
+let g:miramare_transparent_background = 1
+let g:miramare_enable_bold = 1
+let g:dracula_colorterm = 0
+
+Plug 'raimondi/delimitMate'
+
+Plug 'preservim/vim-markdown'
+
+Plug 'ap/vim-css-color'
 
 
 
@@ -50,9 +60,10 @@ call plug#end()
 set termguicolors
 syntax on
 
-let g:miramare_transparent_background = 1
-let g:miramare_enable_bold = 1
-let g:dracula_colorterm = 0
+
+let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+let g:lastplace_open_folds = 0
 
 " set background=light
 
