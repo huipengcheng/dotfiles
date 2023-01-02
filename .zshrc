@@ -122,6 +122,9 @@ alias gcv='git commit -av'
 alias gst='git status'
 alias gp='git push'
 
+alias cat='bat --plain'
+alias batd='bat --diff'
+
 
 # pacman yay paru
 alias pacs='sudo pacman -S'
