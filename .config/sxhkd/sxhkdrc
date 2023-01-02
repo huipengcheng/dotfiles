@@ -21,3 +21,5 @@ super + d ; {r,d,s,w}
     rofi -modes "{run,drun,script,window}" -show
 super + d ; c
     rofi -combi-modes "{run,drun,window,script}" -show combi
+super + control + c
+    rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'

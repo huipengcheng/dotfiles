@@ -17,5 +17,6 @@ fi
 (copyq 2>> "${LOG_FILE}") &
 (nm-applet 2>> "${LOG_FILE}") &
 (sxhkd 2>> "${LOG_FILE}") &
+(greenclip daemon 2>> "${LOG_FILE}") &
 
 feh --bg-scale /usr/share/backgrounds/fields_pp_full2.0.jpg
