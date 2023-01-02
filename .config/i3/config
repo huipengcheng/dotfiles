@@ -117,9 +117,9 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+shift+space floating toggle
 bindsym $mod+space focus mode+toggle
 
-bindsym $mod+shift+f move window to workspace number 99; workspace number 99; floating toggle
-bindsym $mod+shift+ctrl+f workspace number 99
-
+#bindsym $mod+shift+f move window to workspace number 99; workspace number 99; floating toggle
+#bindsym $mod+shift+ctrl+f workspace number 99
+bindsym $mod+shift+f exec ~/.config/i3/i3wm-focus
 
 bindsym $mod+s layout toggle stacking split
 bindsym $mod+w layout toggle tabbed split
