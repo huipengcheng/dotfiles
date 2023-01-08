@@ -25,4 +25,6 @@ fi
 
 (greenclip daemon 2>> "${LOG_FILE}") &
 
+(birdtray 2>> "${LOG_FILE}") &
+
 feh --bg-scale /usr/share/backgrounds/fields_pp_full2.0.jpg
