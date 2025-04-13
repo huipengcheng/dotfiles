@@ -9,3 +9,5 @@ stow -t ~ .
 echo "Stowing configurations for /etc..."
 cd "$DOTFILES_DIR/etc" || exit
 sudo stow -t /etc .
+
+echo "All configurations stowed successfully!"
