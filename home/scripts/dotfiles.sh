@@ -1,6 +1,5 @@
-# dotfiles#!/bin/bash
+#!/bin/bash
 
-```shell
 DOTFILES_DIR=~/dotfiles
 
 echo "Stowing configurations for $HOME..."
@@ -9,6 +8,4 @@ stow -t ~ .
 
 echo "Stowing configurations for /etc..."
 cd "$DOTFILES_DIR/etc" || exit
-
-echo "All configurations stowed successfully!"
-```
+sudo stow -t /etc .
