@@ -1,0 +1,10 @@
+[Unit]
+Description=key remapping daemon
+
+[Service]
+Type=simple
+ExecStart=/keyd-application-mapper -d
+User=huipeng
+
+[Install]
+WantedBy=multi-user.target
