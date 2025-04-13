@@ -1,0 +1,11 @@
+[Unit]
+Description=v2rayn daemon
+After=network.target
+Requires=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/v2rayn-bin/v2rayN
+
+[Install]
+WantedBy=multi-user.target
