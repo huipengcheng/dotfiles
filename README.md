@@ -1,6 +1,9 @@
-# dotfiles#!/bin/bash
+# dotfiles
+
+## Manage /home and /etc  
 
 ```shell
+#!/bin/bash
 DOTFILES_DIR=~/dotfiles
 
 echo "Stowing configurations for $HOME..."
