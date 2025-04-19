@@ -17,6 +17,10 @@ alias proj='cd ~/dev/projects'
 
 alias pacman='sudo pacman'
 alias pacmanclean='pacman -Qdtq | pacman -Rns -'
+alias parus='paru -S'
+alias paruss='paru -Ss'
+alias parur='paru -Rsc'
+alias paraq='paru -Q'
 
 alias vim-lazy='NVIM_APPNAME="nvim-lazy" nvim'
 
