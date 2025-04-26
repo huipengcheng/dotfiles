@@ -284,6 +284,9 @@ return {
 					"lemminx", -- xml
 					"ruff", -- python
 					"pyright",
+					"ts_ls",
+					-- "harper_ls", -- grammar
+					-- "biome",
 				}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
 				automatic_installation = false,
 				handlers = {
