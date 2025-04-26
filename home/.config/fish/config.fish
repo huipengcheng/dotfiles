@@ -34,4 +34,4 @@ set fish_cursor_visual block
 
 
 # kitty 在 DoomOne 下，suggestion 的颜色太浅了，调深一点
-set -g fish_color_autosuggestion "888"
+# set -g fish_color_autosuggestion "888"
