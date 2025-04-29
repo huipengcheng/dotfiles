@@ -226,9 +226,32 @@ return {
 			local servers = {
 				clangd = {},
 				gopls = {},
-				pyright = {},
+				-- pyright = {},
 				ruff = {},
 				jdtls = {},
+				pylsp = {
+					settings = {
+						pylsp = {
+							plugins = {
+								jedi_completion = {
+									enabled = true,
+									include_params = true,
+									include_class_objects = true,
+									include_function_objects = true,
+									fuzzy = true,
+									eager = true,
+								},
+								rope_autoimport = {
+									enabled = true,
+								},
+								-- rope_completion = {
+								-- 	enabled = true,
+								-- 	eager = true,
+								-- },
+							},
+						},
+					},
+				},
 
 				-- rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -283,7 +306,8 @@ return {
 					"jdtls",
 					"lemminx", -- xml
 					"ruff", -- python
-					"pyright",
+					-- "pyright",
+					"pylsp",
 					"ts_ls",
 					-- "harper_ls", -- grammar
 					-- "biome",
