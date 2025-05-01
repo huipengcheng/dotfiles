@@ -28,14 +28,14 @@ return {
 	},
 	{
 		"NTBBloodbath/doom-one.nvim",
-		config = function()
-			vim.cmd.colorscheme("doom-one")
-		end,
+		-- config = function()
+		-- 	vim.cmd.colorscheme("doom-one")
+		-- end,
 	},
 	{
 		"romgrk/doom-one.vim",
 		config = function()
-			-- vim.cmd.colorscheme("doom-one")
+			vim.cmd.colorscheme("doom-one")
 		end,
 	},
 	{
