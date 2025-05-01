@@ -6,8 +6,10 @@ alias fgrep 'fgrep --color=auto'
 
 alias vim='nvim'
 
-alias ll 'eza -lAg --git --icons --group-directories-first'
-alias llm 'eza -lAg --git --icons --group-directories-first --sort modified'
+# alias ll 'eza -lAg --git --icons --group-directories-first'
+# alias llm 'eza -lAg --git --icons --group-directories-first --sort modified'
+alias ll 'eza -lAg --git --group-directories-first'
+alias llm 'eza -lAg --git --group-directories-first --sort modified'
 alias tree 'eza -Ta --icons --ignore-glob="node_modules|.git|.vscode|.DS_Store"'
 alias ltd 'eza -TaD --icons --ignore-glob="node_modules|.git|.vscode|.DS_Store"'
 
