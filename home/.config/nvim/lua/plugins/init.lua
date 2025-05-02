@@ -11,4 +11,6 @@ return {
 	require("plugins.nvim-treesitter"),
 	require("plugins.nvim-tree"),
 	require("plugins.colortheme"),
+	require("plugins.flash"),
+	require("plugins.grug-far"),
 }
