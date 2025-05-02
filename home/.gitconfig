@@ -1,3 +1,5 @@
 [user]
 	email = cheng.huipeng@outlook.com
 	name = huipengcheng
+[init]
+	defaultBranch = main
