@@ -1,3 +1,11 @@
+alias falias='vim ~/.config/fish/conf.d/aliases.fish'
+alias fexport='vim ~/.config/fish/conf.d/export.fish'
+
+alias proj='cd ~/dev/projects'
+alias notes='cd ~/own/obsidian/notes/'
+alias dotfiles='cd ~/dotfiles/'
+
+
 # Colorize grep output (good for log files)
 alias grep 'grep --color=auto'
 alias egrep 'egrep --color=auto'
@@ -14,8 +22,6 @@ alias tree 'eza -Ta --icons --ignore-glob="node_modules|.git|.vscode|.DS_Store"'
 alias ltd 'eza -TaD --icons --ignore-glob="node_modules|.git|.vscode|.DS_Store"'
 
 alias src='exec fish'
-
-alias proj='cd ~/dev/projects'
 
 alias pacman='sudo pacman'
 alias pacmanclean='pacman -Qdtq | pacman -Rns -'
