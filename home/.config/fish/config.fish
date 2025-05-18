@@ -2,6 +2,13 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+if test -e /opt/homebrew
+    /opt/homebrew/bin/brew shellenv | source
+end
+if test -e ~/.zshenv
+    source ~/.zshenv
+end
+
 starship init fish | source
 
 function fish_greeting
