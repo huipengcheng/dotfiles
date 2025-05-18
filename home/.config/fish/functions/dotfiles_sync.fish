@@ -1,4 +1,4 @@
-function dotfiles
+function dotfiles_sync
     command ~/scripts/dotfiles.sh
 end
 #
