@@ -43,10 +43,5 @@ if not set -q fish_vim_mode; or test "$fish_vim_mode" = "enable"
 end
 
 
-if test "$hostname" = "arch"
-    proxy_on > /dev/null
-end
-
-
 # kitty 在 DoomOne 下，suggestion 的颜色太浅了，调深一点
 # set -g fish_color_autosuggestion "888"
