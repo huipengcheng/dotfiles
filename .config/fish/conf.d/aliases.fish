@@ -13,7 +13,9 @@ alias fgrep 'fgrep --color=auto'
 
 
 alias vim='nvim'
-alias vl='NVIM_APPNAME=nvim-lazyvim nvim'
+alias vimk='NVIM_APPNAME=nvim-kickstart nvim'
+alias viml='NVIM_APPNAME=nvim-lazyvim nvim'
+alias vims='NVIM_APPNAME=nvim-slef nvim'
 
 # alias ll 'eza -lAg --git --icons --group-directories-first'
 # alias llm 'eza -lAg --git --icons --group-directories-first --sort modified'
