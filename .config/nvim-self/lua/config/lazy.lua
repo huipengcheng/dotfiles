@@ -15,9 +15,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("options")
-require("autocmds")
-require("keymaps")
+require("config.options")
+require("config.autocmds")
+require("config.keymaps")
 
 -- Setup lazy.nvim
 require("lazy").setup({
@@ -31,3 +31,5 @@ require("lazy").setup({
 	-- automatically check for plugin updates
 	checker = { enabled = true },
 })
+
+vim.cmd.colorscheme("tokyonight")
