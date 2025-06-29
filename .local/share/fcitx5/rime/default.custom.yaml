@@ -1,0 +1,19 @@
+patch:
+  menu/page_size: 9
+  style/horizontal: true
+  __include: rime_ice_suggestion:/
+
+  # https://gist.github.com/lotem/2981316
+  ascii_composer/good_old_caps_lock: true
+  ascii_composer/switch_key:
+    Caps_Lock: noop
+    Shift_L: noop
+    Shift_R: noop
+    Control_L: noop
+    Control_R: noop
+
+  key_binder:
+    bindings/+:
+      # not support super key, so we only can do this by fcitx5 itself
+      # - { when: always, accept: Super+Space, toggle: ascii_mode }
+  

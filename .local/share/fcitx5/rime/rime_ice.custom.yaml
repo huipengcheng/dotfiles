@@ -1,0 +1,16 @@
+patch:
+  switches:
+    - name: ascii_mode
+      states: ["中"]
+    - name: ascii_punct
+      states: ["¥", "$"]
+    - name: traditionalization
+      states: ["简", "繁"]
+    - name: emoji
+      reset: 1
+      states: ["💀", "😄"]
+    - name: full_shape
+      states: ["半角", "全角"]
+    - abbrev: ["词", "单"]
+      name: search_single_char
+      states: ["正常", "单字"]
