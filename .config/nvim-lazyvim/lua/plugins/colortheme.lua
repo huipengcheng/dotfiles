@@ -11,6 +11,10 @@ return {
     "romgrk/doom-one.vim",
     lazy = true,
   },
+  {
+    "joshdick/onedark.vim",
+    lazy = true,
+  },
 
   -- catppuccin
   {
