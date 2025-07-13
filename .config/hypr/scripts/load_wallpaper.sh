@@ -10,7 +10,7 @@ if [ ! -f $WALLPAPER ]; then
 fi
 
 if ! pgrep hyprpaper >/dev/null; then
-  hyprctl keyword exec hyprpaper &
+  hyprctl keyword exec hyprpaper
 fi
 
 hyprctl hyprpaper reload ,"$WALLPAPER"
