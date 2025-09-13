@@ -45,9 +45,9 @@ if [ ${#PACKAGES[@]} -eq 0 ]; then
   PACKAGES=("${DEFAULT_PACKAGES[@]}")
 fi
 
-log_debug() { $VERBOSE && echo -e "\033[36m[DEBUG]\033[0m $*"; }
-log_info() { $VERBOSE && echo -e "\033[32m[INFO]\033[0m $*"; }
-log_warn() { $VERBOSE && echo -e "\033[33m[WARN]\033[0m $*"; }
+log_debug() { if [ "$VERBOSE" = "true" ]; then echo -e "\033[36m[DEBUG]\033[0m $*"; fi; }
+log_info() { if [ "$VERBOSE" = "true" ]; then echo -e "\033[32m[INFO]\033[0m $*"; fi; }
+log_warn() { if [ "$VERBOSE" = "true" ]; then echo -e "\033[33m[WARN]\033[0m $*"; fi; }
 log_error() { echo -e "\033[31m[ERROR]\033[0m $*"; }
 
 trap 'log_error "Script error at line $LINENO"; exit 1' ERR
