@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 DOTFILES_DIR="$HOME/dotfiles"
-PACKAGES=(
+DEFAULT_PACKAGES=(
   "bat"
   "chromium"
   "electron"
@@ -24,12 +24,26 @@ PACKAGES=(
 DRYRUN=false
 VERBOSE=false
 
-for arg in "$@"; do
-  case $arg in
-  --dry-run | -d | -n) DRYRUN=true ;;
-  --verbose | -v) VERBOSE=true ;;
+while [[ $# -gt 0 ]]; do
+  case $1 in
+  --dry-run)
+    DRYRUN=true
+    shift
+    ;;
+  --verbose | -v)
+    VERBOSE=true
+    shift
+    ;;
+  *)
+    PACKAGES+=("$1")
+    shift
+    ;;
   esac
 done
+
+if [ ${#PACKAGES[@]} -eq 0 ]; then
+  PACKAGES=("${DEFAULT_PACKAGES[@]}")
+fi
 
 log_debug() { $VERBOSE && echo -e "\033[36m[DEBUG]\033[0m $*"; }
 log_info() { $VERBOSE && echo -e "\033[32m[INFO]\033[0m $*"; }
@@ -43,10 +57,13 @@ run_hook() {
   local hook_dir=$2
   local hook_name=$3
 
-  if [ -x "$hook_dir/$hook_name.sh" ]; then
+  if [ -f "$hook_dir/$hook_name.sh" ]; then
     if $DRYRUN; then
       log_debug "--- DRY RUN: would execute $hook_name for $pkg ---"
     else
+      if [ ! -x "$hook_dir/$hook_name.sh" ]; then
+        chmod +x $hook_dir/$hook_name.sh
+      fi
       log_debug "--- Running $hook_name for $pkg ---"
       if ! $hook_dir/$hook_name.sh; then
         log_error "Execute $hook_name failed for $pkg"
