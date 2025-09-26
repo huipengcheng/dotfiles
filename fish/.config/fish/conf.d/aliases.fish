@@ -5,12 +5,10 @@ alias proj='cd ~/dev/projects'
 alias notes='cd ~/own/obsidian/notes/'
 alias dotfiles='cd ~/dotfiles/'
 
-
 # Colorize grep output (good for log files)
 alias grep 'grep --color=auto'
 alias egrep 'egrep --color=auto'
 alias fgrep 'fgrep --color=auto'
-
 
 alias vim='nvim'
 alias vimk='NVIM_APPNAME=nvim-kickstart nvim'
@@ -40,3 +38,5 @@ alias gcmsg='git commit -m'
 alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
+
+alias suvim='sudo -e'
