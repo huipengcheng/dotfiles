@@ -9,6 +9,7 @@ DEFAULT_PACKAGES=(
   "fcitx5"
   "fish"
   "git"
+  "gtk"
   "hypr"
   "keyd"
   "kitty"
