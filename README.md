@@ -1,6 +1,6 @@
 # dotfiles
 
 ```shell
-chmod +x sync.sh
-./sync.sh
+chmod +x install.sh
+./install.sh
 ```
