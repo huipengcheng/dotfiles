@@ -85,6 +85,8 @@ run_stow() {
   fi
 }
 
+./install_backup.sh
+
 log_debug "=== Running global pre_install ==="
 run_hook "main" $DOTFILES_DIR "pre_install"
 
