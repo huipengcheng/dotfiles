@@ -1,3 +1,6 @@
 *.log
 lazy-lock.json
+
 __pycache__/
+
+fcitx5/.config/fcitx5/conf/
