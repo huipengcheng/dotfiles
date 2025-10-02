@@ -14,6 +14,7 @@ DEFAULT_PACKAGES=(
   "kitty"
   "nvim"
   "paru"
+  "qtile"
   "script"
   "starship"
   "stow"
