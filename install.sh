@@ -2,6 +2,7 @@
 set -e
 DOTFILES_DIR="$HOME/dotfiles"
 DEFAULT_PACKAGES=(
+  "bash"
   "bat"
   "chromium"
   "electron"
