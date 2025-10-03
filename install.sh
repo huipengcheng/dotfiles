@@ -17,6 +17,7 @@ DEFAULT_PACKAGES=(
   "nvim"
   "paru"
   "qtile"
+  "rime"
   "script"
   "starship"
   "stow"
