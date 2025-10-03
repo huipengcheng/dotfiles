@@ -2,3 +2,6 @@ export INPUT_METHOD=fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+# for kitty
+# https://github.com/kovidgoyal/kitty/issues/469
+export GLFW_IM_MODULE=ibus
