@@ -23,6 +23,7 @@ DEFAULT_PACKAGES=(
   "stow"
   "waybar"
   "wofi"
+  "x11"
 )
 
 DRYRUN=false
