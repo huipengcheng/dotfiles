@@ -4,6 +4,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 DEFAULT_PACKAGES=(
   "bash"
   "bat"
+  "bin"
   "chromium"
   "electron"
   "fastfetch"
