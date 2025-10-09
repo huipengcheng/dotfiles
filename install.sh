@@ -25,6 +25,7 @@ DEFAULT_PACKAGES=(
   "waybar"
   "wofi"
   "x11"
+  "zathura"
 )
 
 DRYRUN=false
