@@ -1,2 +1,3 @@
+include theme/catppuccin/themes/catppuccin-frappe
 set selection-clipboard clipboard
 set selection-notification false

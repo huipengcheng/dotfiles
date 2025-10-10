@@ -1,0 +1,6 @@
+[submodule "zathura/.config/zathura/theme/catppuccin"]
+	path = zathura/.config/zathura/theme/catppuccin
+	url = git@github.com:catppuccin/zathura.git
+[submodule "zathura/.config/zathura/theme/gruvbox"]
+	path = zathura/.config/zathura/theme/gruvbox
+	url = https://github.com/eastack/zathura-gruvbox.git
