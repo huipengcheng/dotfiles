@@ -1,0 +1,78 @@
+[main]
+
+leftmeta = layer(l_mod)
+rightmeta = layer(r_mod)
+# meta = layer(mod)
+leftshift = esc
+capslock = esc
+
+[l_mod]
+a = leftalt
+s = leftmeta
+d = leftcontrol
+f = leftshift
+
+[r_mod]
+j = rightshift
+k = rightcontrol
+l = rightmeta
+; = rightalt
+# 
+# [mod]
+# a = layer(l_alt)
+# s = layer(l_met)
+# d = layer(l_ctl)
+# f = layer(l_sft)
+# j = layer(r_sft)
+# k = layer(r_ctl)
+# l = layer(r_met)
+# ; = layer(r_alt)
+# 
+# [l_alt:A]
+# j = j
+# k = k
+# l = l
+# ; = ;
+# 
+# [l_met:M]
+# j = j
+# k = k
+# l = l
+# ; = ;
+# 
+# [l_ctl:C]
+# j = j
+# k = k
+# l = l
+# ; = ;
+# 
+# [l_sft:S]
+# j = J
+# k = K
+# l = L
+# ; = :
+# 
+# [r_sft:S]
+# a = A
+# s = S
+# d = D
+# f = F
+# 
+# [r_ctl:C]
+# a = a
+# s = s
+# d = d
+# f = f
+# 
+# [r_met:M]
+# a = a
+# s = s
+# d = d
+# f = f
+# 
+# [r_alt:A]
+# a = a
+# s = s
+# d = d
+# f = f
+# 
