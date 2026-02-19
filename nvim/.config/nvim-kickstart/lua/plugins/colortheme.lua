@@ -1,106 +1,35 @@
-return {
-	{ -- You can easily change to a different colorscheme.
-		-- Change the name of the colorscheme plugin below, and then
-		-- change the command in the config to whatever the name of that colorscheme is.
-		--
-		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-		"folke/tokyonight.nvim",
-		priority = 1000, -- Make sure to load this before all the other start plugins.
-		config = function()
-			---@diagnostic disable-next-line: missing-fields
-			require("tokyonight").setup({
-				styles = {
-					comments = { italic = false }, -- Disable italics in comments
-				},
-			})
+local active_theme = "doom-one"
 
-			-- Load the colorscheme here.
-			-- Like many other themes, this one has different styles, and you could load
-			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			-- vim.cmd.colorscheme("tokyonight")
-		end,
-	},
-
-	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
-		config = true,
-	},
-	{
-		"NTBBloodbath/doom-one.nvim",
-		-- config = function()
-		-- 	vim.cmd.colorscheme("doom-one")
-		-- end,
-	},
-	{
-		"romgrk/doom-one.vim",
-		config = function()
-			vim.cmd.colorscheme("doom-one")
-		end,
-	},
-	{
-		"rebelot/kanagawa.nvim",
-		config = function()
-			-- vim.cmd.colorscheme("kanagawa")
-		end,
-	},
-	{
-		"thesimonho/kanagawa-paper.nvim",
-		config = function()
-			-- vim.cmd.colorscheme("kanagawa-paper")
-		end,
-	},
-	{
-		"neanias/everforest-nvim",
-	},
-	{
-		"bluz71/vim-moonfly-colors",
-		config = function()
-			-- vim.cmd.colorscheme("moonfly")
-		end,
-	},
-	{
-		"bluz71/vim-nightfly-colors",
-		config = function()
-			-- vim.cmd.colorscheme("nightfly")
-		end,
-	},
-	{
-		"catppuccin/nvim",
-		config = function()
-			-- latte, frappe, macchiato, mocha
-			-- vim.cmd.colorscheme("catppuccin-macchiato")
-		end,
-	},
-	{
-		"EdenEast/nightfox.nvim",
-		config = function()
-			-- nightfox, dayfox, dawnfox, duskfox, nordfox, terafox, carbonfox
-			-- vim.cmd.colorscheme("terafox")
-		end,
-	},
-	{
-		"sainnhe/gruvbox-material",
-		config = function()
-			-- vim.cmd.colorscheme("gruvbox-material")
-		end,
-	},
-	{
-		"fynnfluegge/monet.nvim",
-		config = function()
-			-- vim.cmd.colorscheme("monet")
-		end,
-	},
-	{
-		"pineapplegiant/spaceduck",
-		config = function()
-			-- vim.cmd.colorscheme("spaceduck")
-		end,
-	},
-	{
-		"loctvl842/monokai-pro.nvim",
-		config = function()
-			-- vim.cmd.colorscheme("monokai-pro")
-		end,
-	},
+local themes = {
+	{ "folke/tokyonight.nvim", opts = { styles = { comments = { italic = false } } } },
+	"ellisonleao/gruvbox.nvim",
+	-- "NTBBloodbath/doom-one.nvim",
+	"romgrk/doom-one.vim",
+	"rebelot/kanagawa.nvim",
+	"thesimonho/kanagawa-paper.nvim",
+	"neanias/everforest-nvim",
+	"bluz71/vim-moonfly-colors",
+	"bluz71/vim-nightfly-colors",
+	{ "catppuccin/nvim", name = "catppuccin" },
+	"EdenEast/nightfox.nvim",
+	"sainnhe/gruvbox-material",
+	"fynnfluegge/monet.nvim",
+	"pineapplegiant/spaceduck",
+	"loctvl842/monokai-pro.nvim",
 }
+
+for i, theme in ipairs(themes) do
+	themes[i] = type(theme) == "string" and { theme, priority = 1000 } or theme
+	themes[i].priority = 1000
+end
+
+-- 监听 Neovim 的启动生命周期。
+-- 当 lazy.nvim 把上面的高优先级主题全部加载进内存后，触发这个回调进行激活。
+vim.api.nvim_create_autocmd("VimEnter", {
+	desc = "Theme Callback: Activate colorscheme after plugins load",
+	callback = function()
+		pcall(vim.cmd.colorscheme, active_theme)
+	end,
+})
+
+return themes
