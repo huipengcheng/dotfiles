@@ -62,14 +62,19 @@ return {
 						i = {
 							["<C-h>"] = "preview_scrolling_left",
 							["<C-l>"] = "preview_scrolling_right",
+							["<M-h>"] = "results_scrolling_left",
+							["<M-l>"] = "results_scrolling_right",
 						},
 						n = {
 							["<C-h>"] = "preview_scrolling_left",
 							["<C-l>"] = "preview_scrolling_right",
+							["<M-h>"] = "results_scrolling_left",
+							["<M-l>"] = "results_scrolling_right",
 						},
 					},
 					-- wrap_results = true,
 					-- prompt, result, preview
+					path_display = { "smart" },
 					layout_strategy = 'vertical',
 					sorting_strategy = "ascending",
 					layout_config = {
