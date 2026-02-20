@@ -1,5 +1,4 @@
 return {
-
 	-- NOTE: Plugins can specify dependencies.
 	--
 	-- The dependencies are proper plugin specifications as well - anything
@@ -58,15 +57,39 @@ return {
 				-- You can put your default mappings / updates / etc. in here
 				--  All the info you're looking for is in `:help telescope.setup()`
 				--
-				-- defaults = {
-				--   mappings = {
-				--     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-				--   },
-				-- },
+				defaults = {
+					mappings = {
+						i = {
+							["<C-h>"] = "preview_scrolling_left",
+							["<C-l>"] = "preview_scrolling_right",
+						},
+						n = {
+							["<C-h>"] = "preview_scrolling_left",
+							["<C-l>"] = "preview_scrolling_right",
+						},
+					},
+					-- wrap_results = true,
+					-- prompt, result, preview
+					layout_strategy = 'vertical',
+					sorting_strategy = "ascending",
+					layout_config = {
+						height = 0.7,
+						prompt_position = "top",
+						vertical = {
+							mirror = true,
+						},
+					},
+				},
 				-- pickers = {}
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),
+					},
+					fzf = {
+						fuzzy = true,                    -- 开启模糊匹配
+						override_generic_sorter = true,  -- 覆盖默认的通用排序器
+						override_file_sorter = true,     -- 覆盖默认的文件排序器
+    						case_mode = "smart_case",        -- 全小写时不敏感，一旦输入大写字母则敏感
 					},
 				},
 			})
