@@ -115,6 +115,7 @@ return {
 
 					map("<leader>e", vim.diagnostic.open_float, "Show diagnostic [E]rror messages", { "n" })
 					map("K", vim.lsp.buf.hover, "Hover Documentation", { "n" })
+					map("<leader>ch", "<cmd>ClangdSwitchSourceHeader<cr>", "[C]hange [H]eader/Source", { "n" })
 
 					-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 					---@param client vim.lsp.Client
@@ -229,7 +230,21 @@ return {
 			--  - settings (table): Override the default settings passed when initializing the server.
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 			local servers = {
-				clangd = {},
+				clangd = {
+					-- Fix: Address the 'multiple different client offset_encodings' warning
+					capabilities = {
+						offsetEncoding = { "utf-16" },
+					},
+					cmd = {
+						"clangd",
+						"--background-index", -- Index project in the background
+						"--clang-tidy", -- Enable static analysis
+						"--header-insertion=iwyu", -- Automatically add missing includes
+						"--completion-style=detailed", -- Show more info in completion menu
+						"--function-arg-placeholders", -- Insert placeholders for arguments
+						"--fallback-style=llvm", -- Default style if .clang-format is missing
+					},
+				},
 				gopls = {},
 				ruff = {},
 				jdtls = {},
