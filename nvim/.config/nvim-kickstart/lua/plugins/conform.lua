@@ -41,6 +41,15 @@ return {
 				css = { "prettier" },
 				sh = { "shfmt" },
 				bash = { "shfmt" },
+				-- Rust: Uses the built-in rustfmt
+				rust = { "rustfmt" },
+
+				-- SQL: Use sql-formatter for standard SQL cleanup
+				sql = { "sql-formatter" },
+
+				-- JSON & HTML: Prettier is the best choice here
+				json = { "prettier" },
+				html = { "prettier" },
 			},
 		},
 	},

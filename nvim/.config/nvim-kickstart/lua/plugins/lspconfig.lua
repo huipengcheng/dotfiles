@@ -306,6 +306,38 @@ return {
 
 				-- CSS
 				cssls = {},
+
+				-- Rust configuration
+				rust_analyzer = {
+					settings = {
+						["rust-analyzer"] = {
+							checkOnSave = {
+								command = "clippy", -- Use clippy for heavier linting on save
+							},
+							procMacro = {
+								enable = true, -- Enable support for procedural macros
+							},
+						},
+					},
+				},
+
+				-- SQL configuration
+				sqls = {},
+
+				-- JSON configuration
+				jsonls = {
+					settings = {
+						json = {
+							schemas = require("schemastore").json.schemas(), -- Optional: Integration with SchemaStore.nvim
+							validate = { enable = true },
+						},
+					},
+				},
+
+				-- HTML configuration
+				html = {
+					filetypes = { "html", "templ" }, -- Add templ if you use Go templates
+				},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -339,6 +371,8 @@ return {
 
 				-- CSS
 				"css-lsp", -- CSS LSP
+
+				"sql-formatter",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
