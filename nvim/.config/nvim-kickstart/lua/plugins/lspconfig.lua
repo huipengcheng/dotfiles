@@ -291,6 +291,21 @@ return {
 						},
 					},
 				},
+				-- JavaScript and TypeScript
+				vtsls = {
+					settings = {
+						typescript = {
+							updateImportsOnFileMove = { enabled = "always" },
+							suggest = { completeFunctionCalls = true },
+						},
+					},
+				},
+
+				-- Bash
+				bashls = {},
+
+				-- CSS
+				cssls = {},
 			}
 
 			-- Ensure the servers and tools above are installed
@@ -313,6 +328,17 @@ return {
 				"google-java-format",
 				"goimports",
 				"gofumpt",
+
+				-- JavaScript / TypeScript
+				"vtsls", -- Modern LSP for JS/TS (faster than tsserver)
+				"prettier", -- Industry standard formatter for JS/TS/CSS
+
+				-- Bash
+				"bash-language-server", -- Bash LSP
+				"shfmt", -- Shell script formatter
+
+				-- CSS
+				"css-lsp", -- CSS LSP
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
