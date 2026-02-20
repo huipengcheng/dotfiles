@@ -36,19 +36,14 @@ return {
 				java = { "google-java-format" },
 				lua = { "stylua" },
 				python = { "ruff_format" },
+				rust = { "rustfmt" },
+				sh = { "shfmt" },
+				bash = { "shfmt" },
+				sql = { "sql-formatter" },
+				json = { "prettier" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
 				css = { "prettier" },
-				sh = { "shfmt" },
-				bash = { "shfmt" },
-				-- Rust: Uses the built-in rustfmt
-				rust = { "rustfmt" },
-
-				-- SQL: Use sql-formatter for standard SQL cleanup
-				sql = { "sql-formatter" },
-
-				-- JSON & HTML: Prettier is the best choice here
-				json = { "prettier" },
 				html = { "prettier" },
 			},
 		},
