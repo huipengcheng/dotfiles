@@ -308,9 +308,15 @@ return {
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
 				"clang-format",
+				"codelldb",
 				"google-java-format",
 				"goimports",
 				"gofumpt",
+				"delve",
+
+				"debugpy",
+
+
 
 				-- JavaScript / TypeScript
 				"vtsls", -- Modern LSP for JS/TS (faster than tsserver)
