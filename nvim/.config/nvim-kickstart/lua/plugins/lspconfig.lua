@@ -30,10 +30,9 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 
 			-- For json
-			"b0o/SchemaStore.nvim"
+			"b0o/SchemaStore.nvim",
 		},
 		config = function()
-
 			--  This function gets run when an LSP attaches to a particular buffer.
 			--    That is to say, every time a new file is opened that is associated with
 			--    an lsp (for example, opening `main.rs` is associated with `rust_analyzer`) this
@@ -194,8 +193,8 @@ return {
 
 			local servers = {
 				clangd = {
-					-- Fix: Address the 'multiple different client offset_encodings' warning
 					capabilities = {
+						-- Prevent UTF-16 offset warnings
 						offsetEncoding = { "utf-16" },
 					},
 					cmd = {
@@ -208,15 +207,15 @@ return {
 						"--fallback-style=llvm", -- Default style if .clang-format is missing
 					},
 				},
+
 				gopls = {
 					analyses = {
-						unusedparams = true, -- Check for unused parameters
+						unusedparams = true,
 					},
-					staticcheck = true, -- Enable static analysis
-					gofumpt = true, -- Use gofumpt as the default formatter logic
+					staticcheck = true,
+					gofumpt = true,
 				},
-				ruff = {},
-				jdtls = {},
+
 				basedpyright = {
 					settings = {
 						basedpyright = {
@@ -237,6 +236,8 @@ return {
 						},
 					},
 				},
+				ruff = {},
+
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -254,17 +255,7 @@ return {
 						},
 					},
 				},
-				-- JavaScript and TypeScript
-				vtsls = {
-					settings = {
-						typescript = {
-							updateImportsOnFileMove = { enabled = "always" },
-							suggest = { completeFunctionCalls = true },
-						},
-					},
-				},
-				bashls = {},
-				cssls = {},
+
 				rust_analyzer = {
 					settings = {
 						["rust-analyzer"] = {
@@ -277,7 +268,20 @@ return {
 						},
 					},
 				},
-				sqls = {},
+
+				vtsls = {
+					settings = {
+						typescript = {
+							updateImportsOnFileMove = { enabled = "always" },
+							suggest = { completeFunctionCalls = true },
+						},
+					},
+				},
+
+				jdtls = {},
+
+				bashls = {},
+
 				jsonls = {
 					settings = {
 						json = {
@@ -286,49 +290,27 @@ return {
 						},
 					},
 				},
+				cssls = {},
+				sqls = {},
 				html = {
 					filetypes = { "html", "templ" }, -- Add templ if you use Go templates
 				},
 			}
 
-			-- Ensure the servers and tools above are installed
-			--
-			-- To check the current status of installed tools and/or manually install
-			-- other tools, you can run
-			--    :Mason
-			--
-			-- You can press `g?` for help in this menu.
-			--
-			-- `mason` had to be setup earlier: to configure its options see the
-			-- `dependencies` table for `nvim-lspconfig` above.
-			--
 			-- You can add other tools here that you want Mason to install
 			-- for you, so that they are available from within Neovim.
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
-				"stylua", -- Used to format Lua code
+				"stylua",
+				"debugpy",
 				"clang-format",
 				"codelldb",
 				"google-java-format",
 				"goimports",
 				"gofumpt",
 				"delve",
-
-				"debugpy",
-
-
-
-				-- JavaScript / TypeScript
-				"vtsls", -- Modern LSP for JS/TS (faster than tsserver)
-				"prettier", -- Industry standard formatter for JS/TS/CSS
-
-				-- Bash
-				"bash-language-server", -- Bash LSP
-				"shfmt", -- Shell script formatter
-
-				-- CSS
-				"css-lsp", -- CSS LSP
-
+				"prettier",
+				"shfmt",
 				"sql-formatter",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
