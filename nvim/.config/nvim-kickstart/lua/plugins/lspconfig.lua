@@ -186,7 +186,7 @@ return {
 			vim.diagnostic.config({
 				update_in_insert = true,
 				severity_sort = true,
-				float = { border = "rounded", source = "if_many" },  
+				float = { border = "rounded", source = "if_many" },
 				underline = { severity = vim.diagnostic.severity.ERROR },
 				signs = vim.g.have_nerd_font and {
 					text = {
@@ -235,41 +235,40 @@ return {
 				jdtls = {},
 				basedpyright = {
 					settings = {
-  					  basedpyright = {
-  					    analysis = {
-						  diagnosticMode = 'openFilesOnly',
-  					      typeCheckingMode = "basic",
-  					      autoImportCompletions = true,
-		 		          useLibraryCodeForTypes = true,
-                          diagnosticSeverityOverrides = {
-                            autoSearchPaths = true,
-                            enableTypeIgnoreComments = false,
-                            reportGeneralTypeIssues = 'none',
-                            reportArgumentType = 'none',
-                            reportUnknownMemberType = 'none',
-                            reportAssignmentType = 'none',
-                          },
-  					    },
-  					  },
-  					},
-  				},
-
+						basedpyright = {
+							analysis = {
+								diagnosticMode = "openFilesOnly",
+								typeCheckingMode = "basic",
+								autoImportCompletions = true,
+								useLibraryCodeForTypes = true,
+								diagnosticSeverityOverrides = {
+									autoSearchPaths = true,
+									enableTypeIgnoreComments = false,
+									reportGeneralTypeIssues = "none",
+									reportArgumentType = "none",
+									reportUnknownMemberType = "none",
+									reportAssignmentType = "none",
+								},
+							},
+						},
+					},
+				},
 				lua_ls = {
 					settings = {
-					  Lua = {
-    				    completion = {
-    				      callSnippet = 'Replace',
-    				    },
-    				    diagnostics = {
-    				      globals = { 'vim' }, 
-    				      disable = { 'unused-local' }, 
-    				    },
-    				    workspace = {
-    				      checkThirdParty = false,
-    				    },
-    				    telemetry = { enable = false },
-    				  },
-    				},
+						Lua = {
+							completion = {
+								callSnippet = "Replace",
+							},
+							diagnostics = {
+								globals = { "vim" },
+								disable = { "unused-local" },
+							},
+							workspace = {
+								checkThirdParty = false,
+							},
+							telemetry = { enable = false },
+						},
+					},
 				},
 			}
 
@@ -293,7 +292,7 @@ return {
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+				ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
 				automatic_installation = false,
 				handlers = {
 					function(server_name)
