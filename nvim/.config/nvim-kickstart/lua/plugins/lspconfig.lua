@@ -28,6 +28,9 @@ return {
 
 			-- Allows extra capabilities provided by nvim-cmp
 			"hrsh7th/cmp-nvim-lsp",
+
+			-- For json
+			"b0o/SchemaStore.nvim"
 		},
 		config = function()
 			-- Brief aside: **What is LSP?**
@@ -300,14 +303,8 @@ return {
 						},
 					},
 				},
-
-				-- Bash
 				bashls = {},
-
-				-- CSS
 				cssls = {},
-
-				-- Rust configuration
 				rust_analyzer = {
 					settings = {
 						["rust-analyzer"] = {
@@ -320,11 +317,7 @@ return {
 						},
 					},
 				},
-
-				-- SQL configuration
 				sqls = {},
-
-				-- JSON configuration
 				jsonls = {
 					settings = {
 						json = {
@@ -333,8 +326,6 @@ return {
 						},
 					},
 				},
-
-				-- HTML configuration
 				html = {
 					filetypes = { "html", "templ" }, -- Add templ if you use Go templates
 				},
