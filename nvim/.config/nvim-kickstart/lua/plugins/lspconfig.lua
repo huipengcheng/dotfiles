@@ -245,7 +245,13 @@ return {
 						"--fallback-style=llvm", -- Default style if .clang-format is missing
 					},
 				},
-				gopls = {},
+				gopls = {
+					analyses = {
+						unusedparams = true, -- Check for unused parameters
+					},
+					staticcheck = true, -- Enable static analysis
+					gofumpt = true, -- Use gofumpt as the default formatter logic
+				},
 				ruff = {},
 				jdtls = {},
 				basedpyright = {
@@ -303,6 +309,10 @@ return {
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua", -- Used to format Lua code
+				"clang-format",
+				"google-java-format",
+				"goimports",
+				"gofumpt",
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
