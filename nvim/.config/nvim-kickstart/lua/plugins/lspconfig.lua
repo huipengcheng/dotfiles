@@ -113,6 +113,9 @@ return {
 					--  For example, in C this would take you to the header.
 					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
 
+					map("<leader>e", vim.diagnostic.open_float, "Show diagnostic [E]rror messages", { "n" })
+					map("K", vim.lsp.buf.hover, "Hover Documentation", { "n" })
+
 					-- This function resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
 					---@param client vim.lsp.Client
 					---@param method vim.lsp.protocol.Method
@@ -181,8 +184,9 @@ return {
 			-- Diagnostic Config
 			-- See :help vim.diagnostic.Opts
 			vim.diagnostic.config({
+				update_in_insert = true,
 				severity_sort = true,
-				float = { border = "rounded", source = "if_many" },
+				float = { border = "rounded", source = "if_many" },  
 				underline = { severity = vim.diagnostic.severity.ERROR },
 				signs = vim.g.have_nerd_font and {
 					text = {
@@ -194,7 +198,8 @@ return {
 				} or {},
 				virtual_text = {
 					source = "if_many",
-					spacing = 2,
+					spacing = 4,
+					severity = { min = vim.diagnostic.severity.ERROR },
 					format = function(diagnostic)
 						local diagnostic_message = {
 							[vim.diagnostic.severity.ERROR] = diagnostic.message,
@@ -229,29 +234,49 @@ return {
 				-- pyright = {},
 				ruff = {},
 				jdtls = {},
-				pylsp = {
+				basedpyright = {
 					settings = {
-						pylsp = {
-							plugins = {
-								jedi_completion = {
-									enabled = true,
-									include_params = true,
-									include_class_objects = true,
-									include_function_objects = true,
-									fuzzy = true,
-									eager = true,
-								},
-								rope_autoimport = {
-									enabled = true,
-								},
-								-- rope_completion = {
-								-- 	enabled = true,
-								-- 	eager = true,
-								-- },
-							},
-						},
-					},
-				},
+  					  basedpyright = {
+  					    analysis = {
+						  diagnosticMode = 'openFilesOnly',
+  					      typeCheckingMode = "basic",
+  					      autoImportCompletions = true,
+		 		          useLibraryCodeForTypes = true,
+                          diagnosticSeverityOverrides = {
+                            autoSearchPaths = true,
+                            enableTypeIgnoreComments = false,
+                            reportGeneralTypeIssues = 'none',
+                            reportArgumentType = 'none',
+                            reportUnknownMemberType = 'none',
+                            reportAssignmentType = 'none',
+                          },
+  					    },
+  					  },
+  					},
+  				},
+				-- pylsp = {
+				-- 	settings = {
+				-- 		pylsp = {
+				-- 			plugins = {
+				-- 				jedi_completion = {
+				-- 					enabled = true,
+				-- 					include_params = true,
+				-- 					include_class_objects = true,
+				-- 					include_function_objects = true,
+				-- 					fuzzy = true,
+				-- 					eager = true,
+				-- 				},
+				-- 				rope_autoimport = {
+				-- 					enabled = true,
+				-- 				},
+				-- 				-- rope_completion = {
+				-- 				-- 	enabled = true,
+				-- 				-- 	eager = true,
+				-- 				-- },
+				-- 			},
+				-- 		},
+				-- 	},
+				-- },
 
 				-- rust_analyzer = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
