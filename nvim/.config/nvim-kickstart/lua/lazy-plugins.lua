@@ -2,6 +2,10 @@ require("lazy").setup({
 	"NMAC427/guess-indent.nvim", -- Detect tabstop and shiftwidth automatically
 	{ import = "plugins" },
 }, {
+	change_detection = {
+		enabled = true,
+		notify = false,
+	},
 	ui = {
 		icons = vim.g.have_nerd_font and {} or {
 			cmd = "⌘",
