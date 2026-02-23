@@ -7,6 +7,7 @@ DEFAULT_PACKAGES=(
   "fcitx5" "fish" "git" "gtk" "hypr" "keyd" "kitty"
   "nvim" "paru" "qtile" "rime" "script" "starship"
   "stow" "waybar" "wofi" "x11" "zathura"
+  "agents" "qoder"
 )
 ALLOWED_SYSTEM_PATHS=(
   "/etc/keyd"
