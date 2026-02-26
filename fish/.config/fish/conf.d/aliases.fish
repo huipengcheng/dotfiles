@@ -38,5 +38,6 @@ alias gcmsg='git commit -m'
 alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
+alias glo='git log --oneline -10'
 
 alias suvim='sudo -e'
