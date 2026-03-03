@@ -3,3 +3,14 @@
 	name = huipengcheng
 [init]
 	defaultBranch = main
+[color]
+	ui = auto
+[diff]
+	algorithm = histogram
+	indentHeuristic = true
+	renames = true
+	mnemonicPrefix = true
+	colorMoved = default
+	submodule = log
+[pager]
+	diff = true
