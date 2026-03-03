@@ -5,7 +5,7 @@ DOTFILES_DIR="$HOME/dotfiles"
 DEFAULT_PACKAGES=(
   "bash" "bat" "bin" "chromium" "electron" "fastfetch"
   "fcitx5" "fish" "git" "gtk" "hypr" "keyd" "kitty"
-  "nvim" "paru" "qtile" "rime" "script" "starship"
+  "nvim" "paru" "qtile" "Qoder" "rime" "script" "starship"
   "stow" "waybar" "wofi" "x11" "zathura"
 )
 ALLOWED_SYSTEM_PATHS=(
