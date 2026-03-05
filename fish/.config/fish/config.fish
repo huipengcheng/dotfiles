@@ -42,6 +42,7 @@ if not set -q fish_vim_mode; or test "$fish_vim_mode" = "enable"
     set fish_cursor_visual block
 end
 
+set -g fish_history 50000
 
 # kitty 在 DoomOne 下，suggestion 的颜色太浅了，调深一点
 # set -g fish_color_autosuggestion "888"
