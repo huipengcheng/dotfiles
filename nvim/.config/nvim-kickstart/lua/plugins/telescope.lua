@@ -59,17 +59,17 @@ return {
         defaults = {
           mappings = {
             i = {
-              ['<C-j>'] = 'actions.move_selection_next',
-              ['<C-k>'] = 'actions.move_selection_previous',
-              ['<C-c>'] = 'actions.close',
-              ['<C-u>'] = 'actions.preview_scrolling_up',
-              ['<C-d>'] = 'actions.preview_scrolling_down',
+              ['<C-j>'] = actions.move_selection_next,
+              ['<C-k>'] = actions.move_selection_previous,
+              ['<C-c>'] = actions.close,
+              ['<C-u>'] = actions.preview_scrolling_up,
+              ['<C-d>'] = actions.preview_scrolling_down,
             },
             n = {
-              ['q'] = 'actions.close',
-              ['v'] = 'actions.file_vsplit',
-              ['s'] = 'actions.file_split',
-              ['t'] = 'actions.file_tab',
+              ['q'] = actions.close,
+              ['v'] = actions.file_vsplit,
+              ['s'] = actions.file_split,
+              ['t'] = actions.file_tab,
               ['p'] = require('telescope.actions.layout').toggle_preview,
             },
           },
