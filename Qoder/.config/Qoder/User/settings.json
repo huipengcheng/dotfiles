@@ -35,5 +35,13 @@
     "editor.lineNumbers": "relative",
     "editor.rulers": [
         88
-    ]
+    ],
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.environmentChangesRelaunch": false,
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
 }
