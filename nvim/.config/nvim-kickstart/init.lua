@@ -1,5 +1,7 @@
 require("options")
 require("keymaps")
 require("autocmds")
+require("im-switcher")
+require("notification")
 require("lazy-bootstrap")
 require("lazy-plugins")
