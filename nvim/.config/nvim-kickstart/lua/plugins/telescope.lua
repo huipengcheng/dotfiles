@@ -51,6 +51,7 @@ return {
 
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
+      local actions = require 'telescope.actions'
       require('telescope').setup {
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
@@ -58,21 +59,25 @@ return {
         defaults = {
           mappings = {
             i = {
-              ['<C-h>'] = 'preview_scrolling_left',
-              ['<C-l>'] = 'preview_scrolling_right',
-              ['<M-h>'] = 'results_scrolling_left',
-              ['<M-l>'] = 'results_scrolling_right',
+              ['<C-j>'] = 'actions.move_selection_next',
+              ['<C-k>'] = 'actions.move_selection_previous',
+              ['<C-c>'] = 'actions.close',
+              ['<C-u>'] = 'actions.preview_scrolling_up',
+              ['<C-d>'] = 'actions.preview_scrolling_down',
             },
             n = {
-              ['<C-h>'] = 'preview_scrolling_left',
-              ['<C-l>'] = 'preview_scrolling_right',
-              ['<M-h>'] = 'results_scrolling_left',
-              ['<M-l>'] = 'results_scrolling_right',
+              ['q'] = 'actions.close',
+              ['v'] = 'actions.file_vsplit',
+              ['s'] = 'actions.file_split',
+              ['t'] = 'actions.file_tab',
+              ['p'] = require('telescope.actions.layout').toggle_preview,
             },
           },
           -- wrap_results = true,
           -- prompt, result, preview
-          path_display = { 'smart' },
+          -- path_display = { 'smart' },
+          -- path_display = { truncate = 3 },
+          path_display = { 'filename_first' },
           layout_strategy = 'vertical',
           sorting_strategy = 'ascending',
           layout_config = {
