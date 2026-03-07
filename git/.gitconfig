@@ -3,6 +3,10 @@
 	name = huipengcheng
 [init]
 	defaultBranch = main
+[core]
+	autocrlf = false
+[push]
+	default = simple
 [color]
 	ui = auto
 [diff]
