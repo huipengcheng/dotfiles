@@ -283,15 +283,60 @@ return {
           },
         },
 
-        jdtls = {},
+        jdtls = {
+          settings = {
+            jdtls = {
+              
+            },
+          },
+        },
 
         bashls = {},
 
         jsonls = {
+          -- lazy-load schemastore when needed
+          before_init = function(_, new_config)
+            new_config.settings.json.schemas = new_config.settings.json.schemas or {}
+            vim.list_extend(new_config.settings.json.schemas, require('schemastore').json.schemas())
+          end,
           settings = {
             json = {
-              schemas = require('schemastore').json.schemas(), -- Optional: Integration with SchemaStore.nvim
+              format = {
+                enable = true,
+              },
               validate = { enable = true },
+            },
+          },
+        },
+        yamlls = {
+          -- Have to add this for yamlls to understand that we support line folding
+          capabilities = {
+            textDocument = {
+              foldingRange = {
+                dynamicRegistration = false,
+                lineFoldingOnly = true,
+              },
+            },
+          },
+          -- lazy-load schemastore when needed
+          before_init = function(_, new_config)
+            new_config.settings.yaml.schemas = vim.tbl_deep_extend('force', new_config.settings.yaml.schemas or {}, require('schemastore').yaml.schemas())
+          end,
+          settings = {
+            redhat = { telemetry = { enabled = false } },
+            yaml = {
+              keyOrdering = false,
+              format = {
+                enable = true,
+              },
+              validate = true,
+              schemaStore = {
+                -- Must disable built-in schemaStore support to use
+                -- schemas from SchemaStore.nvim plugin
+                enable = false,
+                -- Avoid TypeError: Cannot read properties of undefined (reading 'length')
+                url = '',
+              },
             },
           },
         },
@@ -300,6 +345,9 @@ return {
         html = {
           filetypes = { 'html', 'templ' }, -- Add templ if you use Go templates
         },
+
+        dockerls = {},
+        docker_compose_language_service = {},
       }
 
       for name, server in pairs(servers) do
