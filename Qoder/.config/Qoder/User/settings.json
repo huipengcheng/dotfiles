@@ -2,7 +2,7 @@
     "app": {
         "configGeneralDisplayLanguage": "en-us",
         "configGeneralAiResponseLanguage": "en-us",
-        "configGeneralImprovementPlan": "disagree",
+        "configGeneralImprovementPlan": "agree",
         "configGeneralImportSettings": "VS Code",
         "configCompletionEnableNES": true,
         "configCompletionDisabledLanguages": [],
