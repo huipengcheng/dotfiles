@@ -3,8 +3,8 @@
 leftmeta = layer(l_mod)
 rightmeta = layer(r_mod)
 # meta = layer(mod)
-#leftshift = esc
-#capslock = esc
+leftshift = esc
+capslock = esc
 
 [l_mod]
 a = leftalt
