@@ -1,7 +1,6 @@
 [main]
 
 tab = overloadt2(nav, tab, 220)
-capslock = overload(control, esc)
 # space = overloadi(space, timeout(overloadt2(nav, space, 200), 500, space), 125)
 
 [nav]

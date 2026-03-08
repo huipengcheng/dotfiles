@@ -142,56 +142,11 @@ return {
         },
 
         gopls = {
-          settings = {
-            gopls = {
-              gofumpt = true,
-              codelenses = {
-                gc_details = false,
-                generate = true,
-                regenerate_cgo = true,
-                run_govulncheck = true,
-                test = true,
-                tidy = true,
-                upgrade_dependency = true,
-                vendor = true,
-              },
-              hints = {
-                assignVariableTypes = true,
-                compositeLiteralFields = true,
-                compositeLiteralTypes = true,
-                constantValues = true,
-                functionTypeParameters = true,
-                parameterNames = true,
-                rangeVariableTypes = true,
-              },
-              analyses = {
-                nilness = true,
-                unusedparams = true,
-                unusedwrite = true,
-                useany = true,
-              },
-              usePlaceholders = true,
-              completeUnimported = true,
-              staticcheck = true,
-              directoryFilters = { '-.git', '-.vscode', '-.idea', '-.vscode-test', '-node_modules' },
-              semanticTokens = true,
-            },
-            on_attach = function(client, _)
-              -- workaround for gopls not supporting semanticTokensProvider
-              -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
-              if not client.server_capabilities.semanticTokensProvider then
-                local semantic = client.config.capabilities.textDocument.semanticTokens
-                client.server_capabilities.semanticTokensProvider = {
-                  full = true,
-                  legend = {
-                    tokenTypes = semantic.tokenTypes,
-                    tokenModifiers = semantic.tokenModifiers,
-                  },
-                  range = true,
-                }
-              end
-            end,
+          analyses = {
+            unusedparams = true,
           },
+          staticcheck = true,
+          gofumpt = true,
         },
 
         basedpyright = {
@@ -226,36 +181,12 @@ return {
                 globals = { 'vim' },
                 disable = { 'unused-local' },
               },
+              workspace = {
+                -- Disable checking third party libraries to stop the "Apply configuration" popup
+                checkThirdParty = false,
+              },
               telemetry = { enable = false },
             },
-            -- Special Lua Config, as recommended by neovim help docs
-            on_init = function(client)
-              if client.workspace_folders then
-                local path = client.workspace_folders[1].name
-                if path ~= vim.fn.stdpath 'config' and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc')) then return end
-              end
-
-              client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
-                runtime = {
-                  version = 'LuaJIT',
-                  path = { 'lua/?.lua', 'lua/?/init.lua' },
-                },
-                workspace = {
-                  -- Disable checking third party libraries to stop the "Apply configuration" popup
-                  checkThirdParty = false,
-                  library = {
-                    vim.env.VIMRUNTIME,
-                    -- Depending on the usage, you might want to add additional paths here.
-                    -- "${3rd}/luv/library"
-                    -- "${3rd}/busted/library",
-                  },
-                  -- or pull in all of 'runtimepath'.
-                  -- NOTE: this is a lot slower and will cause issues when working on your own configuration.
-                  --  See https://github.com/neovim/nvim-lspconfig/issues/3189
-                  -- library = vim.api.nvim_get_runtime_file('', true),
-                },
-              })
-            end,
           },
         },
 
@@ -305,6 +236,40 @@ return {
         vim.lsp.config(name, server)
         vim.lsp.enable(name)
       end
+
+      -- Special Lua Config, as recommended by neovim help docs
+      vim.lsp.config('lua_ls', {
+        on_init = function(client)
+          if client.workspace_folders then
+            local path = client.workspace_folders[1].name
+            if path ~= vim.fn.stdpath 'config' and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc')) then return end
+          end
+
+          client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
+            runtime = {
+              version = 'LuaJIT',
+              path = { 'lua/?.lua', 'lua/?/init.lua' },
+            },
+            workspace = {
+              checkThirdParty = false,
+              library = {
+                vim.env.VIMRUNTIME,
+                -- Depending on the usage, you might want to add additional paths here.
+                -- "${3rd}/luv/library"
+                -- "${3rd}/busted/library",
+              },
+              -- or pull in all of 'runtimepath'.
+              -- NOTE: this is a lot slower and will cause issues when working on your own configuration.
+              --  See https://github.com/neovim/nvim-lspconfig/issues/3189
+              -- library = vim.api.nvim_get_runtime_file('', true),
+            },
+          })
+        end,
+        settings = {
+          Lua = {},
+        },
+      })
+      vim.lsp.enable 'lua_ls'
     end,
   },
 }
