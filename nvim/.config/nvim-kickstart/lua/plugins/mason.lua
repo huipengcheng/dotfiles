@@ -52,6 +52,8 @@ return {
         "google-java-format",
         "goimports",
         "gofumpt",
+        "gomodifytags",
+        "golangci-lint",
         "prettier",
         "shfmt",
         "sql-formatter",
