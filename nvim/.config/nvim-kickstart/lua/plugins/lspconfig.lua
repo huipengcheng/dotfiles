@@ -176,11 +176,13 @@ return {
               directoryFilters = { '-.git', '-.vscode', '-.idea', '-.vscode-test', '-node_modules' },
               semanticTokens = true,
             },
-            on_attach = function(client, _)
-              -- workaround for gopls not supporting semanticTokensProvider
-              -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
-              if not client.server_capabilities.semanticTokensProvider then
-                local semantic = client.config.capabilities.textDocument.semanticTokens
+          },
+          on_attach = function(client, _)
+            -- workaround for gopls not supporting semanticTokensProvider
+            -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
+            if not client.server_capabilities.semanticTokensProvider then
+              local semantic = client.config.capabilities.textDocument.semanticTokens
+              if semantic then
                 client.server_capabilities.semanticTokensProvider = {
                   full = true,
                   legend = {
@@ -190,8 +192,8 @@ return {
                   range = true,
                 }
               end
-            end,
-          },
+            end
+          end,
         },
 
         basedpyright = {
@@ -228,35 +230,35 @@ return {
               },
               telemetry = { enable = false },
             },
-            -- Special Lua Config, as recommended by neovim help docs
-            on_init = function(client)
-              if client.workspace_folders then
-                local path = client.workspace_folders[1].name
-                if path ~= vim.fn.stdpath 'config' and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc')) then return end
-              end
-
-              client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
-                runtime = {
-                  version = 'LuaJIT',
-                  path = { 'lua/?.lua', 'lua/?/init.lua' },
-                },
-                workspace = {
-                  -- Disable checking third party libraries to stop the "Apply configuration" popup
-                  checkThirdParty = false,
-                  library = {
-                    vim.env.VIMRUNTIME,
-                    -- Depending on the usage, you might want to add additional paths here.
-                    -- "${3rd}/luv/library"
-                    -- "${3rd}/busted/library",
-                  },
-                  -- or pull in all of 'runtimepath'.
-                  -- NOTE: this is a lot slower and will cause issues when working on your own configuration.
-                  --  See https://github.com/neovim/nvim-lspconfig/issues/3189
-                  -- library = vim.api.nvim_get_runtime_file('', true),
-                },
-              })
-            end,
           },
+          -- Special Lua Config, as recommended by neovim help docs
+          on_init = function(client)
+            if client.workspace_folders then
+              local path = client.workspace_folders[1].name
+              if path ~= vim.fn.stdpath 'config' and (vim.uv.fs_stat(path .. '/.luarc.json') or vim.uv.fs_stat(path .. '/.luarc.jsonc')) then return end
+            end
+
+            client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
+              runtime = {
+                version = 'LuaJIT',
+                path = { 'lua/?.lua', 'lua/?/init.lua' },
+              },
+              workspace = {
+                -- Disable checking third party libraries to stop the "Apply configuration" popup
+                checkThirdParty = false,
+                library = {
+                  vim.env.VIMRUNTIME,
+                  -- Depending on the usage, you might want to add additional paths here.
+                  -- "${3rd}/luv/library"
+                  -- "${3rd}/busted/library",
+                },
+                -- or pull in all of 'runtimepath'.
+                -- NOTE: this is a lot slower and will cause issues when working on your own configuration.
+                --  See https://github.com/neovim/nvim-lspconfig/issues/3189
+                -- library = vim.api.nvim_get_runtime_file('', true),
+              },
+            })
+          end,
         },
 
         rust_analyzer = {
