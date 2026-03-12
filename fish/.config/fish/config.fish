@@ -44,5 +44,7 @@ end
 
 set -g fish_history 50000
 
+zoxide init fish | source
+
 # kitty 在 DoomOne 下，suggestion 的颜色太浅了，调深一点
 # set -g fish_color_autosuggestion "888"
