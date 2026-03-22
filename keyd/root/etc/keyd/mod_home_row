@@ -1,0 +1,19 @@
+[main]
+
+leftmeta = layer(l_mod)
+rightmeta = layer(r_mod)
+# meta = layer(mod)
+# leftshift = esc
+# capslock = esc
+
+[l_mod]
+a = leftalt
+s = leftmeta
+d = leftcontrol
+f = leftshift
+
+[r_mod]
+j = rightshift
+k = rightcontrol
+l = rightmeta
+; = rightalt
