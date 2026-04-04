@@ -1,0 +1,10 @@
+# Fish local state
+fish_variables
+
+# Fisher-managed plugin artifacts
+completions/fisher.fish
+completions/fzf_configure_bindings.fish
+conf.d/fzf.fish
+functions/fisher.fish
+functions/fzf_configure_bindings.fish
+functions/_fzf_*.fish
