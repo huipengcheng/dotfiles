@@ -1,15 +1,15 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
-if test -e /opt/homebrew
-    /opt/homebrew/bin/brew shellenv | source
-end
-if test -e ~/.zshenv
+if test -f ~/.zshenv
     source ~/.zshenv
 end
 
-starship init fish | source
+if status is-interactive
+    if test -x /opt/homebrew/bin/brew
+        /opt/homebrew/bin/brew shellenv | source
+    end
+
+    starship init fish | source
+    zoxide init fish | source
+end
 
 function fish_greeting
 end
@@ -42,9 +42,8 @@ if not set -q fish_vim_mode; or test "$fish_vim_mode" = "enable"
     set fish_cursor_visual block
 end
 
-set -g fish_history 50000
+# fish_history controls the history session name, not the history size.
+# Leave it unset to use the default fish_history file.
 
-zoxide init fish | source
-
-# kitty 在 DoomOne 下，suggestion 的颜色太浅了，调深一点
+# In kitty with DoomOne, autosuggestions are too faint, so darken them a bit.
 # set -g fish_color_autosuggestion "888"

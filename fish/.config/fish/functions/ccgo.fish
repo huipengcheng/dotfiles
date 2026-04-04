@@ -3,5 +3,5 @@ function ccgo
     and /tmp/a.out
 end
 
-# 给 ccgo 自动补全文件名
+# Enable filename completion for ccgo
 complete -c ccgo -f
