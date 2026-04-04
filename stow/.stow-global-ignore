@@ -21,3 +21,6 @@ _darcs
 ^/COPYING
 
 .*\.log
+.*\.lock
+.*\.bak
+.*lazy-lock\.json
