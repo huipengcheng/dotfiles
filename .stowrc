@@ -1,0 +1,4 @@
+--ignore=.*\.bak$
+--ignore=.*\.lock$
+--ignore=.*\.log$
+--ignore=.*lazy-lock\.json$

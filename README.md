@@ -1,198 +1,240 @@
 # Dotfiles
 
-个人 Linux 系统配置文件集合，使用 GNU Stow 管理，支持模块化部署。
+Personal Linux dotfiles managed with GNU Stow.
 
-## 系统要求
+This repository is organized as modular packages. Most packages install into
+`$HOME`, while `keyd` also contains a system-level package for `/etc/keyd`.
 
-- **操作系统**: Linux (推荐 Arch Linux)
-- **必需工具**: GNU Stow
-- **可选工具**: rsync (用于备份)
+## Requirements
 
-## 快速开始
+- Linux
+- GNU Stow
+- `rsync` (optional, used by `backup.sh` when available)
+- `sudo` (required for system-level packages such as `keyd`)
 
-### 克隆仓库
+Arch Linux is the primary target, but the layout is generic enough for other
+Linux distributions.
+
+## Quick Start
+
+### Clone the Repository
 
 ```bash
 git clone <repository-url> ~/dotfiles
 cd ~/dotfiles
 ```
 
-### 安装配置
-
-```bash
-chmod +x install.sh
-./install.sh
-```
-
-## 包含的配置
-
-项目包含以下应用程序的配置文件：
-
-| 配置包 | 描述 |
-|--------|------|
-| **bash** | Bash shell 配置 |
-| **bat** | Cat 命令增强版配置 |
-| **bin** | 自定义脚本和可执行文件 |
-| **chromium** | Chromium 浏览器配置 |
-| **electron** | Electron 应用配置 |
-| **fastfetch** | 系统信息显示工具配置 |
-| **fcitx5** | 中文输入法框架配置 |
-| **firefox** | Firefox 浏览器配置 |
-| **fish** | Fish shell 配置 |
-| **git** | Git 版本控制配置 |
-| **gtk** | GTK 主题配置 |
-| **hypr** | Hyprland 窗口管理器配置 |
-| **keyd** | 键盘重映射工具配置 (系统级) |
-| **kitty** | Kitty 终端模拟器配置 |
-| **nvim** | Neovim 编辑器配置 |
-| **paru** | AUR 助手配置 |
-| **qtile** | Qtile 窗口管理器配置 |
-| **rime** | Rime 输入法引擎配置 |
-| **starship** | 跨 Shell 提示符配置 |
-| **waybar** | Wayland 状态栏配置 |
-| **wofi** | Wayland 应用启动器配置 |
-| **x11** | X11 窗口系统配置 |
-| **zathura** | PDF 阅读器配置 |
-
-## 使用方法
-
-### 全量安装
-
-安装所有配置包：
+### Install Default Packages
 
 ```bash
 ./install.sh
 ```
 
-### 选择性安装
-
-只安装指定的配置包：
+### Install Selected Packages
 
 ```bash
 ./install.sh fish starship nvim
 ```
 
-### 安全模式
-
-在实际修改前预览将要执行的操作：
+### Preview Changes
 
 ```bash
 ./install.sh --dry-run
 ```
 
-### 调试模式
+`--dry-run` also previews package hooks when those hooks support dry-run mode.
 
-显示详细的执行日志：
+### Verbose Mode
 
 ```bash
 ./install.sh --verbose
 ```
 
-### 组合使用
+### Combined Example
 
 ```bash
 ./install.sh --dry-run --verbose fish git nvim
 ```
 
-## 脚本说明
+## Packages
 
-### install.sh
+The repository currently contains these packages:
 
-主安装脚本，提供以下功能：
+| Package | Description |
+|--------|-------------|
+| `Qoder` | Qoder editor settings |
+| `bash` | Bash configuration |
+| `bat` | `bat` configuration |
+| `bin` | Custom scripts in `~/.local/bin` |
+| `chromium` | Chromium flags and related setup |
+| `electron` | Electron flags and related setup |
+| `fastfetch` | Fastfetch configuration |
+| `fcitx5` | Fcitx5 configuration |
+| `firefox` | Firefox `userChrome.css` template; install manually into the correct profile |
+| `fish` | Fish shell configuration |
+| `git` | Git configuration |
+| `gtk` | GTK configuration |
+| `hypr` | Hyprland configuration |
+| `keyd` | Keyd configuration, including `/etc/keyd` |
+| `kitty` | Kitty configuration |
+| `nvim` | Neovim configuration in `~/.config/nvim` |
+| `paru` | Paru configuration |
+| `qtile` | Qtile configuration |
+| `rime` | Rime configuration |
+| `starship` | Starship prompt configuration |
+| `stow` | User-level Stow config such as `~/.stow-global-ignore` |
+| `waybar` | Waybar configuration |
+| `wofi` | Wofi configuration |
+| `x11` | X11 configuration |
+| `zathura` | Zathura configuration |
 
-- **自动备份**: 在部署前自动备份现有配置
-- **模块化部署**: 可选择性地安装特定配置包
-- **安全防护**: 对系统级配置路径进行白名单验证
-- **Hook 支持**: 支持全局和包级别的 pre_install/post_install 钩子
-- **用户级配置**: 通过 Stow 部署到 `$HOME` 目录
-- **系统级配置**: 通过 Sudo + Stow 部署到 `/etc` 等系统目录
+### Default vs Manual Packages
 
-**选项**:
-- `--dry-run`: 模拟执行，不实际修改文件
-- `--verbose, -v`: 显示详细日志
+`./install.sh` installs the packages listed in `DEFAULT_PACKAGES` inside
+[`install.sh`](install.sh). `firefox` is intentionally excluded because Firefox
+profile paths are machine-specific.
 
-### backup.sh
+If you pass `firefox` to `install.sh`, the script still skips it and prints a
+warning. That package is meant to be copied or linked manually into the correct
+Firefox profile.
 
-配置备份脚本：
+## Scripts
 
-- 备份 `~/.config` 目录到 `~/backup/dotfiles/.config`
-- 使用时间戳命名备份目录
-- 优先使用 rsync (如可用)
-- 自动清理旧备份，保留最近 50 个
+### `install.sh`
 
-## 项目结构
+The main deployment script:
 
-```
+- Locates the repository from the script path instead of assuming `~/dotfiles`
+- Runs `backup.sh` before deployment
+- Supports package-level and global `pre_install.sh` / `post_install.sh` hooks
+- Passes `DOTFILES_DRY_RUN=true` to hooks during `--dry-run`
+- Uses Stow with `--no-folding` for user-level packages
+- Validates every entry under `root/` before allowing system-level deployment
+- Uses `sudo stow` for allowed system paths
+
+Supported options:
+
+- `--dry-run`
+- `--verbose`, `-v`
+
+### `backup.sh`
+
+The backup script:
+
+- Backs up these user-level targets when they exist:
+  - `~/.config`
+  - `~/.local/bin`
+  - `~/.local/share/fcitx5/rime`
+  - `~/.bashrc`
+  - `~/.gitconfig`
+  - `~/.xprofile`
+- Writes backups to `~/backup/dotfiles/backup_<timestamp>/`
+- Uses `rsync` when available, otherwise falls back to `cp -a`
+- Keeps the most recent 50 backup directories
+- Supports preview mode through `DOTFILES_DRY_RUN=true`
+
+### `.stowrc`
+
+The repository root contains [`.stowrc`](.stowrc), which provides Stow options
+used during deployment from this repository. It currently ignores runtime and
+backup artifacts such as:
+
+- `*.bak`
+- `*.lock`
+- `*.log`
+- `lazy-lock.json`
+
+## Repository Layout
+
+```text
 dotfiles/
-├── install.sh              # 主安装脚本
-├── backup.sh               # 备份脚本
-├── <package>/              # 配置包目录
-│   ├── .config/           # 用户级配置 (~/.config)
-│   ├── root/              # 系统级配置 (/)
-│   ├── pre_install.sh     # 安装前钩子 (可选)
-│   └── post_install.sh    # 安装后钩子 (可选)
+├── .stowrc
+├── install.sh
+├── backup.sh
+├── <package>/
+│   ├── .config/        # user-level config
+│   ├── .local/         # user-level local data/scripts
+│   ├── root/           # system-level config
+│   ├── pre_install.sh  # optional package hook
+│   └── post_install.sh # optional package hook
 └── README.md
 ```
 
-## 系统级配置
+## System-Level Deployment
 
-部分配置需要系统级权限（如 keyd），脚本会：
+Only explicitly allowed system paths can be deployed. The current allowlist is:
 
-1. 验证目标路径是否在白名单内
-2. 提示需要 sudo 权限
-3. 使用 `sudo stow` 部署到系统目录
-
-**允许的系统路径**:
 - `/etc/keyd`
 
-## 钩子机制
+For packages with a `root/` directory, `install.sh`:
 
-支持在安装过程中执行自定义脚本：
+1. Validates the target path tree against the allowlist
+2. Uses plain `stow -nv` in `--dry-run`
+3. Uses `sudo stow` for the real deployment
 
-### 全局钩子
+If `/etc/keyd` already exists and conflicts with the managed layout, the script
+does not migrate or back it up automatically. Resolve that conflict manually
+before retrying.
 
-放置在项目根目录：
-- `pre_install.sh`: 在所有包部署前执行
-- `post_install.sh`: 在所有包部署后执行
+If `/etc/keyd` does not exist, Stow will create the managed symlink during
+installation.
 
-### 包级钩子
+## Hook Behavior
 
-放置在各配置包目录下：
-- `<package>/pre_install.sh`: 在该包部署前执行
-- `<package>/post_install.sh`: 在该包部署后执行
+Supported hook locations:
 
-## 注意事项
+- `pre_install.sh` in the repository root
+- `post_install.sh` in the repository root
+- `<package>/pre_install.sh`
+- `<package>/post_install.sh`
 
-1. **备份重要**: 首次运行会自动备份，但建议手动备份重要配置
-2. **冲突处理**: 如果目标位置已有文件，Stow 会报错，需手动处理冲突
-3. **系统权限**: 部署系统级配置需要 sudo 密码
-4. **Git 子模块**: 某些配置可能使用 Git 子模块，需执行：
-   ```bash
-   git submodule update --init --recursive
-   ```
+During `--dry-run`, hooks receive:
 
-## 卸载
+```bash
+DOTFILES_DRY_RUN=true
+```
 
-移除已部署的配置：
+Other useful environment variables passed to hooks:
+
+- `DOTFILES_DIR`
+- `DOTFILES_PACKAGE`
+- `DOTFILES_HOOK_NAME`
+- `DOTFILES_VERBOSE`
+
+## Package-Specific Notes
+
+- `chromium` and `electron` use post-install hooks to manage
+  `~/.config/*-flags.conf` based on whether the current session is Wayland.
+- `nvim` now deploys directly to `~/.config/nvim`.
+- `stow` is a regular package in this repository and can install
+  `~/.stow-global-ignore`, but deployment-time ignore behavior is controlled by
+  the repository-level `.stowrc`.
+- `zathura` uses Git submodules for some theme directories.
+
+Initialize submodules when needed:
+
+```bash
+git submodule update --init --recursive
+```
+
+## Uninstall
+
+Remove a user-level package:
 
 ```bash
 cd ~/dotfiles
 stow -D <package-name>
 ```
 
-移除系统级配置：
+Remove a system-level package:
 
 ```bash
-cd ~/dotfiles/<package>
-sudo stow -D -t / root
+sudo stow -d ~/dotfiles/<package> -t / -D root
 ```
 
-## 许可证
+For `chromium` and `electron`, hook-managed `*-flags.conf` files may still need
+manual cleanup or restoration from backup after unstowing.
 
-本项目采用 [LICENSE](LICENSE) 中指定的许可证。
+## License
 
-## 维护
-
-- 定期同步配置变更到仓库
-- 使用 Git 进行版本控制
-- 添加新配置时遵循现有目录结构
+See [LICENSE](LICENSE).
