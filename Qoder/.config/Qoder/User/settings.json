@@ -2,7 +2,7 @@
     "app": {
         "configGeneralDisplayLanguage": "en-us",
         "configGeneralAiResponseLanguage": "en-us",
-        "configGeneralImprovementPlan": "disagree",
+        "configGeneralImprovementPlan": "agree",
         "configGeneralImportSettings": "VS Code",
         "configCompletionEnableNES": true,
         "configCompletionDisabledLanguages": [],
@@ -43,5 +43,7 @@
     "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "qoder-edit-lm-vendor:qoder"
 }
