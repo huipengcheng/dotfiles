@@ -1,10 +1,10 @@
+-- tree-sitter-cli install needed
 return {
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
-    -- main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    branch = "main",
     lazy = false,
     build = ':TSUpdate',
-    -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {
         'bash',
