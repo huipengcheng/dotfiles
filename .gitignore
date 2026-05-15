@@ -6,3 +6,4 @@ lazy-lock.json
 __pycache__/
 
 fcitx5/.config/fcitx5/conf/
+fish/.config/fish/functions/*.local.fish
