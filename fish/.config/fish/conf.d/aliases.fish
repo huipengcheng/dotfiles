@@ -42,5 +42,6 @@ alias gl='git log'
 alias glo='git log --oneline -10'
 alias gd='git difftool'
 alias gch='git checkout'
+alias gskipped="git ls-files -t | grep '^S '"
 
 alias suvim='sudo -e'
