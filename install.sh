@@ -3,7 +3,7 @@ set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEFAULT_PACKAGES=(
-  "Qoder" "bash" "bat" "bin" "chromium" "electron" "fastfetch"
+  "code-oss" "bash" "bat" "bin" "chromium" "electron" "fastfetch"
   "fcitx5" "fish" "git" "gtk" "hypr" "keyd" "kitty"
   "nvim" "paru" "qtile" "rime" "starship" "stow"
   "waybar" "wofi" "x11" "zathura"

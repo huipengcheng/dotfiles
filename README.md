@@ -62,7 +62,7 @@ The repository currently contains these packages:
 
 | Package | Description |
 |--------|-------------|
-| `Qoder` | Qoder editor settings |
+| `code-oss` | Code - OSS editor settings |
 | `bash` | Bash configuration |
 | `bat` | `bat` configuration |
 | `bin` | Custom scripts in `~/.local/bin` |

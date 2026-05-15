@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "editor.fontFamily": "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monospace', monospace",
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "editor.lineNumbers": "relative",
+    "editor.rulers": [
+        88
+    ],
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.environmentChangesRelaunch": false,
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    }
+}
