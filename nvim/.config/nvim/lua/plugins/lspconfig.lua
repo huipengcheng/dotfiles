@@ -27,10 +27,10 @@ return {
           end
 
           map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
-          map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
           map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
           map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
-          map('gt', require('telescope.builtin').lsp_type_definitions, '[G]oto [T]ype Definition')
+          -- gy (not gt) to avoid clobbering vim's built-in tab navigation (gt/gT)
+          map('gy', require('telescope.builtin').lsp_type_definitions, '[G]oto T[y]pe Definition')
 
           map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
           map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
@@ -38,13 +38,14 @@ return {
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction', { 'n', 'x' })
 
-          map('K', vim.lsp.buf.hover, 'Hover Documentation', { 'n' })
-          map('<C-k>', vim.lsp.buf.signature_help, 'Signature Help')
+          -- K (hover) is owned by nvim-ufo, which peeks folds first and falls back
+          -- to vim.lsp.buf.hover() when there is no fold under the cursor.
+          -- <C-k> (signature_help) is intentionally not bound: blink.cmp already shows
+          -- signatures inline while typing arguments, and <C-k> is kept for window nav.
 
-          map('<leader>d', vim.diagnostic.open_float, 'Show [D]iagnostic error messages', { 'n' })
-          map('[d', vim.diagnostic.goto_prev, 'Go to previous [D]iagnostic')
-          map(']d', vim.diagnostic.goto_next, 'Go to next [D]iagnostic')
-          map('<leader>q', vim.diagnostic.setqflist, 'Open Diagnostic [Q]uickfix list')
+          map('<leader>cd', vim.diagnostic.open_float, 'Show [C]ode [D]iagnostic float', { 'n' })
+          map('[d', function() vim.diagnostic.jump { count = -1, float = true } end, 'Go to previous [D]iagnostic')
+          map(']d', function() vim.diagnostic.jump { count = 1, float = true } end, 'Go to next [D]iagnostic')
 
           map('<leader>ch', '<cmd>ClangdSwitchSourceHeader<cr>', '[C]hange [H]eader/Source', { 'n' })
 

@@ -3,26 +3,26 @@ return {
   dependencies = { 'kevinhwang91/promise-async' },
   event = 'BufReadPost',
   init = function()
-    vim.o.foldcolumn = '0' -- '0' is not bad
-    vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+    vim.o.foldcolumn = '0'
+    vim.o.foldlevel = 99 -- ufo needs a large value
     vim.o.foldlevelstart = 99
     vim.o.foldenable = true
   end,
+  keys = {
+    { 'zR', function() require('ufo').openAllFolds() end, desc = 'UFO: Open all folds' },
+    { 'zM', function() require('ufo').closeAllFolds() end, desc = 'UFO: Close all folds' },
+    { 'zr', function() require('ufo').openFoldsExceptKinds() end, desc = 'UFO: Open folds except kinds' },
+    { 'zm', function() require('ufo').closeFoldsWith() end, desc = 'UFO: Close folds with' },
+    {
+      'K',
+      function()
+        local winid = require('ufo').peekFoldedLinesUnderCursor()
+        if not winid then vim.lsp.buf.hover() end
+      end,
+      desc = 'UFO: Peek fold / Hover',
+    },
+  },
   config = function()
-    -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
-    vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
-    vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
-    vim.keymap.set('n', 'zr', require('ufo').openFoldsExceptKinds)
-    vim.keymap.set('n', 'zm', require('ufo').closeFoldsWith) -- closeAllFolds == closeFoldsWith(0)
-    vim.keymap.set('n', 'K', function()
-      local winid = require('ufo').peekFoldedLinesUnderCursor()
-      if not winid then
-        -- choose one of coc.nvim and nvim lsp
-        vim.fn.CocActionAsync 'definitionHover' -- coc.nvim
-        vim.lsp.buf.hover()
-      end
-    end)
-
     local handler = function(virtText, lnum, endLnum, width, truncate)
       local newVirtText = {}
       local suffix = (' 󰁂 %d '):format(endLnum - lnum)
@@ -48,10 +48,6 @@ return {
       return newVirtText
     end
 
-    -- Option 3: treesitter as a main provider instead
-    -- (Note: the `nvim-treesitter` plugin is *not* needed.)
-    -- ufo uses the same query files for folding (queries/<lang>/folds.scm)
-    -- performance and stability are better than `foldmethod=nvim_treesitter#foldexpr()`
     require('ufo').setup {
       open_fold_hl_timeout = 150,
       close_fold_kinds_for_ft = {

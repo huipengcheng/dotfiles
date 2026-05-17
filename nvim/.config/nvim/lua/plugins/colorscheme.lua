@@ -3,7 +3,6 @@ local active_theme = 'doom-one'
 local themes = {
   { 'folke/tokyonight.nvim', opts = { styles = { comments = { italic = false } } } },
   'ellisonleao/gruvbox.nvim',
-  -- "NTBBloodbath/doom-one.nvim",
   'romgrk/doom-one.vim',
   'rebelot/kanagawa.nvim',
   'thesimonho/kanagawa-paper.nvim',
@@ -18,16 +17,22 @@ local themes = {
   'loctvl842/monokai-pro.nvim',
 }
 
-for i, theme in ipairs(themes) do
-  themes[i] = type(theme) == 'string' and { theme, priority = 1000 } or theme
-  themes[i].priority = 1000
+-- Strip "user/" prefix and trailing ".nvim"/".vim" to get the colorscheme name.
+local function repo_to_name(repo)
+  return (repo:match '([^/]+)$'):gsub('%.nvim$', ''):gsub('%.vim$', '')
 end
 
--- 监听 Neovim 的启动生命周期。
--- 当 lazy.nvim 把上面的高优先级主题全部加载进内存后，触发这个回调进行激活。
-vim.api.nvim_create_autocmd('VimEnter', {
-  desc = 'Theme Callback: Activate colorscheme after plugins load',
-  callback = function() pcall(vim.cmd.colorscheme, active_theme) end,
-})
+for i, theme in ipairs(themes) do
+  local spec = type(theme) == 'string' and { theme } or theme
+  local name = spec.name or repo_to_name(spec[1])
+  if name == active_theme then
+    spec.lazy = false
+    spec.priority = 1000
+    spec.config = function() vim.cmd.colorscheme(active_theme) end
+  else
+    spec.lazy = true
+  end
+  themes[i] = spec
+end
 
 return themes
